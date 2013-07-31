@@ -99,8 +99,6 @@ function _tk_scripts() {
 	wp_enqueue_style( '_tk-bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
 
 	wp_enqueue_script('_tk-bootstrapjs', get_template_directory_uri().'/bootstrap/js/bootstrap.min.js', array('jquery') );
-        
-	//wp_enqueue_script( '_tk-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( '_tk-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
