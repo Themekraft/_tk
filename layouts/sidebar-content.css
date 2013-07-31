@@ -1,0 +1,22 @@
+/*
+Theme Name: _tk
+Layout: Sidebar-Content
+*/
+
+.content-area {
+	float: right;
+	margin: 0 0 0 -25%;
+	width: 100%;
+}
+.site-content {
+	margin: 0 0 0 25%;
+}
+.site-main .widget-area {
+	float: left;
+	overflow: hidden;
+	width: 25%;
+}
+.site-footer {
+	clear: both;
+	width: 100%;
+}

@@ -1,0 +1,62 @@
+<?php
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
+ * @package _tk
+ */
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width">
+<title><?php wp_title( '|', true, 'right' ); ?></title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+<div id="page" class="hfeed site">
+	<?php do_action( 'before' ); ?>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+		</div>
+		
+		
+		<div class="navbar">
+		  <div class="container">
+		
+		    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		
+		    <!-- Be sure to leave the brand out there if you want it shown -->
+		    <a class="navbar-brand" href="#">Title</a>
+		
+		    <!-- Place everything within .navbar-collapse to hide it until above 768px -->
+
+		       <?php wp_nav_menu(
+                    array(
+                        'theme_location' => 'primary',
+                        'container_class' => 'nav-collapse collapse navbar-responsive-collapse',
+                        'menu_class' => 'nav navbar-nav',
+                        'fallback_cb' => '',
+                        'menu_id' => 'main-menu',
+                        'walker' => new wp_bootstrap_navwalker()
+                    )
+                ); ?>
+
+		  </div><!-- /.container -->
+		</div><!-- /.navbar -->
+		
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
