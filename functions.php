@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) )
-	$content_width = 640; /* pixels */
+	$content_width = 750; /* pixels */
 
 if ( ! function_exists( '_tk_setup' ) ) :
 /**

@@ -34,5 +34,5 @@
 
 /* some extra padding for the container, you will love it! */ 
 .container {
-	padding: 10px;
+	padding: 0 15px 15px 15px;
 }
