@@ -25,18 +25,34 @@ function _tk_setup() {
     // This theme styles the visual editor with editor-style.css to match the theme style.
     add_editor_style();
 
-    // This theme uses post thumbnails
     if ( function_exists( 'add_theme_support' ) ) {
-    	add_theme_support( 'woocommerce' );
         add_theme_support( 'post-thumbnails' );
-        set_post_thumbnail_size( 222, 160, true );
-        add_image_size( 'slider-top-large', 1000, 250, true );
-		add_image_size( 'slider-top-nivo', 1000, 320, true );
-        add_image_size( 'slider-large', 990, 250, true );
-        add_image_size( 'slider-middle', 756, 250, true );
-        add_image_size( 'slider-thumbnail', 80, 50, true );
-        add_image_size( 'post-thumbnails', 222, 160, true );
-        add_image_size( 'single-post-thumbnail', 598, 372, true );
+		
+		/**
+		 * Add default posts and comments RSS feed links to head
+		*/
+		add_theme_support( 'automatic-feed-links' );
+		
+		/**
+		 * Enable support for Post Thumbnails on posts and pages
+		 *
+		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+		*/
+		add_theme_support( 'post-thumbnails' );
+		
+		/**
+		 * Enable support for Post Formats
+		*/
+		add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+		
+		/**
+		 * Setup the WordPress core custom background feature.
+		*/
+		add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		) ) );
+	
     }
 
 	/**
@@ -44,42 +60,17 @@ function _tk_setup() {
 	 * Translations can be filed in the /languages/ directory
 	 * If you're building a theme based on _tk, use a find and replace
 	 * to change '_tk' to the name of your theme in all the template files
-	 */
+	*/
 	load_theme_textdomain( '_tk', get_template_directory() . '/languages' );
 
 	/**
-	 * Add default posts and comments RSS feed links to head
-	 */
-	add_theme_support( 'automatic-feed-links' );
-
-	/**
-	 * Enable support for Post Thumbnails on posts and pages
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	//add_theme_support( 'post-thumbnails' );
-
-	/**
 	 * This theme uses wp_nav_menu() in one location.
-	 */
-	 // This theme uses wp_nav_menu() in one location.
+	*/ 
     register_nav_menus( array(
         'menu_top' => __( 'Header top menu', '_tk' ),
         'primary'  => __( 'Header bottom menu', '_tk' ),
     ) );
 
-	/**
-	 * Enable support for Post Formats
-	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
-	/**
-	 * Setup the WordPress core custom background feature.
-	 */
-	add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 }
 endif; // _tk_setup
 add_action( 'after_setup_theme', '_tk_setup' );
@@ -126,7 +117,7 @@ add_action( 'wp_enqueue_scripts', '_tk_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.

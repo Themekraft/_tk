@@ -26,16 +26,18 @@
  * @package _tk
  */
 function _tk_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( '_tk_custom_header_args', array(
-		'default-image'          => '',
-		'default-text-color'     => '000',
-		'width'                  => 1000,
-		'height'                 => 250,
-		'flex-height'            => true,
-		'wp-head-callback'       => '_tk_header_style',
-		'admin-head-callback'    => '_tk_admin_header_style',
-		'admin-preview-callback' => '_tk_admin_header_image',
-	) ) );
+	if ( function_exists( 'add_theme_support' ) ) {
+		add_theme_support( 'custom-header', apply_filters( '_tk_custom_header_args', array(
+			'default-image'          => '',
+			'default-text-color'     => '000',
+			'width'                  => 1000,
+			'height'                 => 250,
+			'flex-height'            => true,
+			'wp-head-callback'       => '_tk_header_style',
+			'admin-head-callback'    => '_tk_admin_header_style',
+			'admin-preview-callback' => '_tk_admin_header_image',
+		) ) );
+	}
 }
 add_action( 'after_setup_theme', '_tk_custom_header_setup' );
 
