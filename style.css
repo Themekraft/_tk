@@ -20,6 +20,8 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
+/* import the bootstrap wp CSS additions */
+@import url( inc/bootstrap-wp-additions.css );
 
 /* =Reset
 -------------------------------------------------------------- */
