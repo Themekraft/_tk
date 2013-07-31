@@ -37,7 +37,7 @@
 		</div>
 		
 		
-		<div class="navbar">
+		<nav class="navbar">
 		  <div class="container">
 		
 		    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
