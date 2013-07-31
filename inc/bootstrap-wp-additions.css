@@ -31,3 +31,8 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
 }
 .dropdown-menu ul { list-style: none; }
+
+/* some extra padding for the container, you will love it! */ 
+.container {
+	padding: 20px 10px;
+}
