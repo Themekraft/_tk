@@ -5,9 +5,9 @@
  */
 
 
-/* first fixing the dropdown menu. 
- * most stuff is handled by the walker, but some styles need to be added too.   
- * here we are removing the ">" from the original bootstrap styles, so it works for 2nd and 3rd level dropdown too.. 
+/* First fixing the dropdown menu. 
+ * Most stuff is handled by the walker, but some styles need to be added too.   
+ * Here we are removing the ">" from the original bootstrap styles, so it works for 2nd and 3rd level dropdown too.. 
  * (actually not cool to use more than 1 level dropdown, but if YOU or your users want to do this, it won't break the layout now ;)  */ 
 .dropdown-menu li a {
 	display: block;
@@ -32,7 +32,10 @@
 }
 .dropdown-menu ul { list-style: none; }
 
-/* some extra padding for the container, you will love it! */ 
-.container {
-	padding: 0 15px 15px 15px;
-}
+/* Some modified padding for the bootstrap container. 
+ * Now you can make many styles of design easily. 
+ * Try with giving the .container class just a background colour and have a look. ;) 
+ */ 
+.container { padding: 0 15px 15px 15px; }
+
+
