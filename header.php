@@ -40,8 +40,8 @@
 						
 			</div>
 		</div>
-	</div><!-- close .container -->
-</header><!-- close #masthead -->
+	</div><!-- .container -->
+</header><!-- #masthead -->
 		
 <nav class="site-navigation">		
 	<div class="container">
@@ -70,13 +70,14 @@
 			                )
 			            ); ?>
 				
-				</div><!-- close .navbar -->
+				</div><!-- .navbar -->
 			</div>
 		</div>
-	</div><!-- close .container -->
-</nav><!-- close .site-navigation -->
+	</div><!-- .container -->
+</nav><!-- .site-navigation -->
 
 <div class="main-content">	
 	<div class="container">
 		<div class="row">
 			<div class="main-content-inner col-12 col-lg-8">
+

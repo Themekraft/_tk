@@ -1,6 +1,6 @@
 <?php
 /**
- * The Sidebar containing the main widget areas.
+ * The sidebar containing the main widget area
  *
  * @package _tk
  */
@@ -9,27 +9,33 @@
 	</div><!-- close .main-content-inner -->
 	
 	<div class="sidebar col-12 col-lg-4">
-		<?php do_action( 'before_sidebar' ); ?>
-		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
-			<aside id="search" class="widget widget_search">
-				<?php get_search_form(); ?>
-			</aside>
+		<?php // add the class "panel" below here to wrap the sidebar in Bootstrap style ;) ?>
+		<div class="sidebar-padder">
 
-			<aside id="archives" class="widget">
-				<h3 class="widget-title"><?php _e( 'Archives', '_tk' ); ?></h3>
-				<ul>
-					<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-				</ul>
-			</aside>
-
-			<aside id="meta" class="widget">
-				<h3 class="widget-title"><?php _e( 'Meta', '_tk' ); ?></h3>
-				<ul>
-					<?php wp_register(); ?>
-					<li><?php wp_loginout(); ?></li>
-					<?php wp_meta(); ?>
-				</ul>
-			</aside>
-
-		<?php endif; ?>
+			<?php do_action( 'before_sidebar' ); ?>
+			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+	
+				<aside id="search" class="widget widget_search">
+					<?php get_search_form(); ?>
+				</aside>
+	
+				<aside id="archives" class="widget widget_archive">
+					<h3 class="widget-title"><?php _e( 'Archives', '_tk' ); ?></h3>
+					<ul>
+						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+					</ul>
+				</aside>
+	
+				<aside id="meta" class="widget widget_meta"> 
+					<h3 class="widget-title"><?php _e( 'Meta', '_tk' ); ?></h3>
+					<ul>
+						<?php wp_register(); ?>
+						<li><?php wp_loginout(); ?></li>
+						<?php wp_meta(); ?>
+					</ul>
+				</aside>
+	
+			<?php endif; ?>
+			
+		</div><!-- close .sidebar-padder -->

@@ -1,38 +1,71 @@
 /*
 Theme Name: _tk
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: http://themekraft.com/tk/
+Author: Sven Lehnert and Konrad Sroka
+Author URI: http://themekraft.com/
+Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.  
 Version: 1.0
 License: GNU General Public License
-License URI: license.txt
-Tags:
+License URI: see license.txt
+Tags: coffee, nightshift
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
- _tk is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into 
+the _s starter theme from Automattic, the guys behind WordPress.
 
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
+_s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc. 
+
+Twitter Bootstrap 
+
+
 */
 
 /* Import the necessary TK Bootstrap WP CSS additions */
 @import url( inc/bootstrap-wp-additions.css );
 
-/* Some spacing for nice nested comments.. */ 
-.comment .children { margin-left: 1.5em; }
 
 
-/* Minimalst WordPress Styling */
+/* Minimalist WordPress Styling */
 
 /* Here some needed widget styles 
- * Most widgets are adapted in the bootstrapwp.js - very easy to modify! ;)
+ * Most widgets are adapted in the file bootstrapwp.js - and REALLY easy to modify! ;)
  */
 .widget { margin-bottom: 2em; }
-.widget_nav_menu ul.sub-menu li { padding-left: 30px; }
+.widget_nav_menu ul.sub-menu li, .widget_pages ul.children li { padding-left: 15px; }
 
+/* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line. 
+ * Note: you can change the whole appearance of the search_form() function in our searchform.php */
+.widget_search .search-form input[type="submit"] { display: none; }
+
+
+/* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!  
+ * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
+ .comment .children { margin-left: 1.5em; } 
  
+
+/*  
+ 
+ == Quick CSS styling tips ==
+
+ You can start off in a rough direction with some minimal styles.
+ See below for some tips. ;)
+
+  
+ == Want to have the whole site wrapped? ==  
+  
+ Just fill the .container class with some background color to have a the whole site "wrapped".
+ This works so easy because every main part is wrapped only once into a container class by bootstrap. 
+ Try out by decommenting the next line and go from there. 
+	
+ .container { background: #f9f9f9; border-right: 1px solid #eee; border-left: 1px solid #eee; }
+
+
+ == Want to wrap just the content and sidebar in Bootstrap style? == 
+  
+ That one is a great example to show that some things are much cleaner and easier to do via just adding some HTML classes. 
+ In this case, we will add just one CSS class "panel", look for example at the beginning in content.php! 
+  
+  
+ * Hey, if you don't need my comments just delete me :)  */  	

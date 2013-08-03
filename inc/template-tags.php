@@ -80,7 +80,7 @@ function _tk_comment( $comment, $args, $depth ) {
 			</a>
 			
 			<div class="media-body">
-				<div class="panel">
+				<div class="media-body-wrap panel">
 					
 					<h5 class="media-heading"><?php printf( __( '%s <span class="says">says:</span>', '_tk' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?></h5>
 					<p class="comment-meta">
@@ -88,8 +88,8 @@ function _tk_comment( $comment, $args, $depth ) {
 							<time datetime="<?php comment_time( 'c' ); ?>">
 								<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', '_tk' ), get_comment_date(), get_comment_time() ); ?>
 							</time>
-						</a>
-						<?php edit_comment_link( __( '<span class="glyphicon glyphicon-edit"></span> Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
+						</a> 
+						<?php edit_comment_link( __( '<span style="margin-left: 5px;" class="glyphicon glyphicon-edit"></span> Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
 					</p>
 	
 					<?php if ( '0' == $comment->comment_approved ) : ?>
@@ -100,11 +100,11 @@ function _tk_comment( $comment, $args, $depth ) {
 						<?php comment_text(); ?>
 					</div><!-- .comment-content -->
 										
-					<footer class="panel-footer reply comment-reply">
+					<footer class="reply comment-reply panel-footer">
 						<?php comment_reply_link( array_merge( $args, array( 'add_below' => 'div-comment', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 					</footer><!-- .reply -->
 
-				</div><!-- .panel -->
+				</div>
 			</div><!-- .media-body -->
 
 		</article><!-- .comment-body -->
