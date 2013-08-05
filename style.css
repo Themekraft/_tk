@@ -29,53 +29,6 @@ Twitter Bootstrap
 
 /* My Minimal WordPress Styling comes here */
 
-/* First make sure embeds and iframes fit their containers */
-embed,
-iframe,
-object {
-	max-width: 100%;
-}
-
-/* Images and wp-captions should always fit and be responsive */
-img {
-	display: inline-block;
-	height: auto;
-	max-width: 100%;
-}
-img[class*="wp-image-"] {
-	margin: 10px 0;
-}
-.wp-caption {
-	margin-bottom: 10px;
-	max-width: 100%;
-	border: 1px solid #ccc;
-	padding: 0 10px;
-	border-radius: 4px;
-}
-.wp-caption.aligncenter {
-	margin-bottom: 10px;
-}
-.wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin: 10px 0;
-}
-.wp-caption .wp-caption-text {
-	text-align: center;
-}
-
-/* WP Gallery */
-.gallery {
-	margin-bottom: 1.5em;
-}
-.gallery a img {
-	border: none;
-	height: auto;
-	max-width: 90%;
-}
-.gallery dd {
-	margin: 0;
-}
-
 /* Alignment */
 .alignleft {
 	display: inline;
@@ -92,6 +45,58 @@ img[class*="wp-image-"] {
 	display: block;
 	margin: 0 auto;
 }
+
+
+/* Images and wp-captions should always fit and be responsive */
+img {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+img[class*="wp-image-"] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	max-width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0 10px;
+}
+.wp-caption.aligncenter {
+	margin-bottom: 10px;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+}
+.wp-caption .wp-caption-text {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* WP Gallery */
+.gallery {
+	margin-bottom: 1.5em;
+}
+.gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.gallery dd {
+	margin: 0;
+}
+
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
 
 /* Text meant only for screen readers */
 .screen-reader-text {
@@ -119,12 +124,17 @@ img[class*="wp-image-"] {
 	z-index: 100000; /* Above WP toolbar */
 }
 
+
 /* Content */
+.main-content-inner {
+	padding-bottom: 1.5em;
+}
 .hentry {
 	margin: 0 0 1.5em;
 }
 
-/* Clearing floats */
+
+/* Clearing */
 .clear {
 	clear: both;
 }
