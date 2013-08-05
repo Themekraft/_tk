@@ -42,12 +42,18 @@ img {
 	height: auto;
 	max-width: 100%;
 }
+img[class*="wp-image-"] {
+	margin: 10px 0;
+}
 .wp-caption {
-	margin-bottom: 1.5em;
+	margin-bottom: 10px;
 	max-width: 100%;
 	border: 1px solid #ccc;
 	padding: 0 10px;
 	border-radius: 4px;
+}
+.wp-caption.aligncenter {
+	margin-bottom: 10px;
 }
 .wp-caption img[class*="wp-image-"] {
 	display: block;
