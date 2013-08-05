@@ -29,9 +29,19 @@ Twitter Bootstrap
 
 /* Minimalist WordPress Styling */
 
+/* correcting images to always fit and be responsive */
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+img {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+
 /* Here some needed widget styles 
- * Most widgets are adapted in the file bootstrapwp.js - and REALLY easy to modify! ;)
- */
+ * Most widgets are adapted in the file bootstrapwp.js - and REALLY easy to modify! ;) */
 .widget { margin-bottom: 2em; }
 .widget_nav_menu ul.sub-menu li, .widget_pages ul.children li { padding-left: 15px; }
 
@@ -39,14 +49,11 @@ Twitter Bootstrap
  * Note: you can change the whole appearance of the search_form() function in our searchform.php */
 .widget_search .search-form input[type="submit"] { display: none; }
 
-
 /* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!  
  * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
  .comment .children { margin-left: 1.5em; } 
  
-
 /*  
- 
  == Quick CSS styling tips ==
 
  You can start off in a rough direction with some minimal styles.
