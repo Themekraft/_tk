@@ -30,13 +30,13 @@ Twitter Bootstrap
 /* Minimalist WordPress Styling */
 
 /* correcting images to always fit and be responsive */
-.wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
-}
 img {
 	display: inline-block;
 	height: auto;
+	max-width: 100%;
+}
+.wp-caption {
+	margin-bottom: 1.5em;
 	max-width: 100%;
 }
 
