@@ -26,8 +26,7 @@ function _tk_setup() {
     add_editor_style();
 
     if ( function_exists( 'add_theme_support' ) ) {
-        add_theme_support( 'post-thumbnails' );
-		
+
 		/**
 		 * Add default posts and comments RSS feed links to head
 		*/
@@ -67,7 +66,6 @@ function _tk_setup() {
 	 * This theme uses wp_nav_menu() in one location.
 	*/ 
     register_nav_menus( array(
-        'menu_top' => __( 'Header top menu', '_tk' ),
         'primary'  => __( 'Header bottom menu', '_tk' ),
     ) );
 
