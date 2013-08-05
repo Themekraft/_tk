@@ -23,7 +23,7 @@ Twitter Bootstrap
 */
 
 /* Import the necessary TK Bootstrap WP CSS additions */
-@import url( inc/bootstrap-wp-additions.css );
+@import url( includes/css/bootstrap-wp.css );
 
 
 
@@ -141,7 +141,7 @@ object {
 
 
 /* Here some needed widget styles 
- * Most widgets are adapted in the file bootstrapwp.js - and REALLY easy to modify! ;) */
+ * Most widgets are adapted in the file bootstrap-wp.js - and REALLY easy to modify! ;) */
 .widget { margin-bottom: 2em; }
 .widget_nav_menu ul.sub-menu li, .widget_pages ul.children li { padding-left: 15px; }
 

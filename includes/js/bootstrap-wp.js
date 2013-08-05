@@ -1,4 +1,3 @@
-
 // first set the body to hide and show everyhthing when fully loaded ;)
 document.write("<style>body{display:none;}</style>");
 

@@ -5,7 +5,7 @@
  * The area of the page that contains both current comments
  * and the comment form. The actual display of comments is
  * handled by a callback to _tk_comment() which is
- * located in the inc/template-tags.php file.
+ * located in the includes/template-tags.php file.
  *
  * @package _tk
  */
@@ -49,7 +49,7 @@ if ( post_password_required() )
 				 * to use _tk_comment() to format the comments.
 				 * If you want to overload this in a child theme then you can
 				 * define _tk_comment() and that will be used instead.
-				 * See _tk_comment() in inc/template-tags.php for more.
+				 * See _tk_comment() in includes/template-tags.php for more.
 				 */
 				wp_list_comments( array( 'callback' => '_tk_comment', 'avatar_size' => 50 ) );
 			?>
@@ -90,7 +90,7 @@ if ( post_password_required() )
 
 			  // Basically you can edit everything here! 
 			  // Checkout the docs for more: http://codex.wordpress.org/Function_Reference/comment_form
-			  // Another note: some classes are added in the bootstrapwp.js - ckeck from line 1 
+			  // Another note: some classes are added in the bootstrap-wp.js - ckeck from line 1 
 			  
 	)); 
 	
