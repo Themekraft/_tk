@@ -1,7 +1,7 @@
 /*
 Theme Name: _tk
 Theme URI: http://themekraft.com/tk/
-Author: Sven Lehnert and Konrad Sroka
+Author: ThemeKraft
 Author URI: http://themekraft.com/
 Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.  
 Version: 1.0
@@ -27,9 +27,16 @@ Twitter Bootstrap
 
 
 
-/* Minimalist WordPress Styling */
+/* My Minimal WordPress Styling comes here */
 
-/* correcting images to always fit and be responsive */
+/* First make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Images and wp-captions should always fit and be responsive */
 img {
 	display: inline-block;
 	height: auto;
@@ -38,7 +45,84 @@ img {
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	border-radius: 4px;
 }
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 10px 0;
+}
+.wp-caption .wp-caption-text {
+	text-align: center;
+}
+
+/* WP Gallery */
+.gallery {
+	margin-bottom: 1.5em;
+}
+.gallery a img {
+	border: none;
+	height: auto;
+	max-width: 90%;
+}
+.gallery dd {
+	margin: 0;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* Content */
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+/* Clearing floats */
+.clear {
+	clear: both;
+}
+
 
 /* Here some needed widget styles 
  * Most widgets are adapted in the file bootstrapwp.js - and REALLY easy to modify! ;) */
@@ -48,6 +132,11 @@ img {
 /* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line. 
  * Note: you can change the whole appearance of the search_form() function in our searchform.php */
 .widget_search .search-form input[type="submit"] { display: none; }
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
 
 /* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!  
  * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
@@ -73,6 +162,27 @@ img {
   
  That one is a great example to show that some things are much cleaner and easier to do via just adding some HTML classes. 
  In this case, we will add just one CSS class "panel", look for example at the beginning in content.php! 
+ 
+ 
+ == Infinite Scrolling by Jetpack ==
+ You can enable this cool feature by simply decommenting the lines below and make sure you use the same classes on the right place in your html.. 
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. 
+ * Older / Newer Posts Navigation (the pagination, must always be hidden), Theme Footer only when set to scrolling.. */ 
+
+/* 
+.infinite-scroll .page-links, 
+.infinite-scroll.neverending .site-footer { 
+	display: none;
+}
+*/
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+
+/*
+.infinity-end.neverending .site-footer {
+	display: block;
+} 
+*/
   
-  
- * Hey, if you don't need my comments just delete me :)  */  	
+/* Hey, if you don't need my comments anymore, just delete me! :)  */  	
