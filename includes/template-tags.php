@@ -195,7 +195,7 @@ function _tk_posted_on() {
 			esc_attr( get_the_time() ),
 			$time_string_update
 		);
-		$time_string .= ', updated on ' . $time_string_update;
+		$time_string .= __(', updated on ', '_tk') . $time_string_update;
 	} 
 	
 	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', '_tk' ),
