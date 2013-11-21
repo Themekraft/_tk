@@ -15,7 +15,7 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="container">
 		<div class="row">
-			<div class="site-footer-inner col-12">
+			<div class="site-footer-inner col-sm-12">
 			
 				<div class="site-info">
 					<?php do_action( '_tk_credits' ); ?>

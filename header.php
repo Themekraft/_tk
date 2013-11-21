@@ -23,7 +23,7 @@
 <header id="masthead" class="site-header" role="banner">
 	<div class="container">
 		<div class="row">
-			<div class="site-header-inner col-12">
+			<div class="site-header-inner col-sm-12">
 					
 				<?php $header_image = get_header_image();
 				if ( ! empty( $header_image ) ) { ?>
@@ -46,10 +46,12 @@
 <nav class="site-navigation">		
 	<div class="container">
 		<div class="row">
-			<div class="site-navigation-inner col-12">
-				<div class="navbar">
+			<div class="site-navigation-inner col-sm-12">
+				<div class="navbar navbar-default">
+					<div class="navbar-header">
 				    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				    	<span class="sr-only">Toggle navigation</span>
 				      <span class="icon-bar"></span>
 				      <span class="icon-bar"></span>
 				      <span class="icon-bar"></span>
@@ -57,18 +59,19 @@
 				
 				    <!-- Your site title as branding in the menu -->
 				    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				    
-				    <!-- The WordPress Menu goes here -->
-				       <?php wp_nav_menu(
-			                array(
-			                    'theme_location' => 'primary',
-			                    'container_class' => 'nav-collapse collapse navbar-responsive-collapse',
-			                    'menu_class' => 'nav navbar-nav',
-			                    'fallback_cb' => '',
-			                    'menu_id' => 'main-menu',
-			                    'walker' => new wp_bootstrap_navwalker()
-			                )
-			            ); ?>
+				  </div>
+
+			    <!-- The WordPress Menu goes here -->
+	        <?php wp_nav_menu(
+                array(
+                    'theme_location' => 'primary',
+                    'container_class' => 'collapse navbar-collapse navbar-responsive-collapse',
+                    'menu_class' => 'nav navbar-nav',
+                    'fallback_cb' => '',
+                    'menu_id' => 'main-menu',
+                    'walker' => new wp_bootstrap_navwalker()
+                )
+            ); ?>
 				
 				</div><!-- .navbar -->
 			</div>
@@ -79,5 +82,5 @@
 <div class="main-content">	
 	<div class="container">
 		<div class="row">
-			<div class="main-content-inner col-12 col-lg-8">
+			<div class="main-content-inner col-sm-12 col-md-8">
 
