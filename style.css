@@ -4,7 +4,7 @@ Theme URI: http://themekraft.com/tk/
 Author: ThemeKraft
 Author URI: http://themekraft.com/
 Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.  
-Version: 1.0
+Version: 1.1
 License: GNU General Public License
 License URI: see license.txt
 Tags: coffee, nightshift
@@ -28,6 +28,11 @@ Twitter Bootstrap
 
 
 /* My Minimal WordPress Styling comes here */
+
+/* This is a small security for too long strings titles */
+body {
+    word-wrap: break-word;
+}
 
 /* Alignment */
 .alignleft {
