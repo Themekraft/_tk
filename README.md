@@ -1,7 +1,7 @@
-_tk
-===
+== _tk ==
+=========
 
-Themekraft Starter Theme
+ThemeKraft Starter Theme
 
 
 Hi. I'm a starter theme called `_tk`. I'm a theme meant for hacking so don't use me as just as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
@@ -18,8 +18,8 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 * Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
 * Licensed under GPLv3 or later. :) Use it to make something cool.
 
-Getting Started
----------------
+== Getting Started ==
+---------------------
 
 If you want to keep it simple, head over to http://underscores.me and generate your `_tk` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
 
@@ -42,3 +42,23 @@ Then, update the stylesheet header in style.css and the links in footer.php with
 Now you're ready to go! The next step is easy to say but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+
+
+== Changelog ==
+---------------
+
+= 1.1 =
+
+12.12.2013
+
+Bootstrap update to 3.0.3.
+Add the Bootstrap LESS and JS files.
+Minor CSS fix for wordwrap.
+
+== 1.0 ==
+
+08.08.2013
+
+Initial release.
+
+
