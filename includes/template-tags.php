@@ -98,7 +98,7 @@ function _tk_comment( $comment, $args, $depth ) {
 						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', '_tk' ); ?></p>
 					<?php endif; ?>
 					
-					<div class="comment-content">
+					<div class="comment-content panel-body">
 						<?php comment_text(); ?>
 					</div><!-- .comment-content -->
 										
