@@ -102,9 +102,17 @@ function _tk_comment( $comment, $args, $depth ) {
 						<?php comment_text(); ?>
 					</div><!-- .comment-content -->
 										
-					<footer class="reply comment-reply panel-footer">
-						<?php comment_reply_link( array_merge( $args, array( 'add_below' => 'div-comment', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-					</footer><!-- .reply -->
+					<?php comment_reply_link(
+						array_merge(
+							$args, array(
+								'add_below' => 'div-comment',
+								'depth' 	=> $depth,
+								'max_depth' => $args['max_depth'],
+								'before' 	=> '<footer class="reply comment-reply panel-footer">',
+								'after' 	=> '</footer><!-- .reply -->'
+							)
+						)
+					); ?>
 
 				</div>
 			</div><!-- .media-body -->
