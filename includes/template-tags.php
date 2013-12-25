@@ -80,7 +80,7 @@ function _tk_comment( $comment, $args, $depth ) {
 			</a>
 			
 			<div class="media-body">
-				<div class="media-body-wrap panel">
+				<div class="media-body-wrap panel panel-default">
 					
 					<h5 class="media-heading"><?php printf( __( '%s <span class="says">says:</span>', '_tk' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?></h5>
 					<p class="comment-meta">
