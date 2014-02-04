@@ -11,7 +11,7 @@
  */
 
 class wp_bootstrap_navwalker extends Walker_Nav_Menu {
-	
+
 	/**
 	 * @see Walker::start_lvl()
 	 * @since 3.0.0
@@ -20,15 +20,15 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 * @param int $depth Depth of page. Used for padding.
 	 */
 	function start_lvl( &$output, $depth ) {
-		
+
 		$indent = str_repeat( "\t", $depth );
 		if($depth == 0){
-			$output	   .= "\n$indent<ul class=\"dropdown-menu\">\n";	
+			$output	   .= "\n$indent<ul class=\"dropdown-menu\">\n";
 		} else {
-			$output	   .= "\n$indent<ul>\n";	
-		
+			$output	   .= "\n$indent<ul>\n";
+
 		}
-				
+
 	}
 
 	/**
@@ -48,10 +48,10 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
 		/**
 		 * Dividers & Headers
-	     * ==================
+		 * ==================
 		 * Determine whether the item is a Divider, Header, or regular menu item.
 		 * To prevent errors we use the strcasecmp() function to so a comparison
-		 * that is not case sensitive. The strcasecmp() function returns a 0 if 
+		 * that is not case sensitive. The strcasecmp() function returns a 0 if
 		 * the strings are equal.
 		 */
 		if (strcasecmp($item->title, 'divider') == 0) {
@@ -90,7 +90,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$attributes .= ($args->has_children) 	    ? ' data-toggle="dropdown" data-target="#" class="dropdown-toggle"' : '';
 
 			$item_output = $args->before;
-			
+
 			/**
 			 * Glyphicons
 			 * ===========
@@ -103,7 +103,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			} else {
 				$item_output .= '<a'. $attributes .'>';
 			}
-			
+
 			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 			$item_output .= ($args->has_children && $depth == 0) ? ' <span class="caret"></span></a>' : '</a>';
 			$item_output .= $args->after;
@@ -117,7 +117,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 *
 	 * Display one element if the element doesn't have any children otherwise,
 	 * display the element and its children. Will only traverse up to the max
-	 * depth and no ignore elements under that depth. 
+	 * depth and no ignore elements under that depth.
 	 *
 	 * This method shouldn't be called directly, use the walk() method instead.
 	 *
@@ -134,19 +134,19 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	 */
 
 	function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
-        if ( !$element ) {
-            return;
-        }
+		if ( !$element ) {
+			return;
+		}
 
-        $id_field = $this->db_fields['id'];
+		$id_field = $this->db_fields['id'];
 
-        //display this element
-        if ( is_object( $args[0] ) ) {
-           $args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
-        }
+		//display this element
+		if ( is_object( $args[0] ) ) {
+			$args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
+		}
 
-        parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
-    }
+		parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
+	}
 }
 
 ?>
