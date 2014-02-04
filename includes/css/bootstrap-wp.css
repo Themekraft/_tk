@@ -1,14 +1,14 @@
-/*  
- * 
- * Here are a few needed CSS additions to integrate bootstrap truly into WordPress, 
- * We kept this slim as possible. Try to avoi any overwriting if not really needed.  
+/*
+ *
+ * Here are a few needed CSS additions to integrate bootstrap truly into WordPress,
+ * We kept this slim as possible. Try to avoi any overwriting if not really needed.
  */
 
 
-/* First fixing the dropdown menu. 
- * Most stuff is handled by the walker, but some styles need to be added too.   
- * Here we are removing the ">" from the original bootstrap styles, so it works for 2nd and 3rd level dropdown too.. 
- * (actually not cool to use more than 1 level dropdown, but if YOU or your users want to do this, it won't break the layout now ;)  */ 
+/* First fixing the dropdown menu.
+ * Most stuff is handled by the walker, but some styles need to be added too.
+ * Here we are removing the ">" from the original bootstrap styles, so it works for 2nd and 3rd level dropdown too..
+ * (actually not cool to use more than 1 level dropdown, but if YOU or your users want to do this, it won't break the layout now ;)  */
 .dropdown-menu li a {
 	display: block;
 	padding: 3px 20px;
@@ -20,20 +20,20 @@
 }
 .dropdown-menu li a:hover,
 .dropdown-menu li a:focus {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #357ebd;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#428bca), to(#357ebd));
-  background-image: -webkit-linear-gradient(top, #428bca, 0%, #357ebd, 100%);
-  background-image: -moz-linear-gradient(top, #428bca 0%, #357ebd 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #357ebd;
+	background-image: -webkit-gradient(linear, left 0%, left 100%, from(#428bca), to(#357ebd));
+	background-image: -webkit-linear-gradient(top, #428bca, 0%, #357ebd, 100%);
+	background-image: -moz-linear-gradient(top, #428bca 0%, #357ebd 100%);
+	background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
 }
 .dropdown-menu ul { list-style: none; }
 
-/* Some modified padding for the bootstrap container. 
- * Now you can make many styles of design easily. 
- * Try with giving the .container class just a background colour and have a look. ;) 
- */ 
+/* Some modified padding for the bootstrap container.
+ * Now you can make many styles of design easily.
+ * Try with giving the .container class just a background colour and have a look. ;)
+ */
 .container { padding: 0 15px 15px 15px; }

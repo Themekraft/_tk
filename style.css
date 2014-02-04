@@ -3,7 +3,7 @@ Theme Name: _tk
 Theme URI: http://themekraft.com/tk/
 Author: ThemeKraft
 Author URI: http://themekraft.com/
-Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.  
+Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.
 Version: 1.1.2
 License: GNU General Public License
 License URI: see license.txt
@@ -12,12 +12,12 @@ Tags: coffee, nightshift
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into 
+This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into
 the _s starter theme from Automattic, the guys behind WordPress.
 
-_s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc. 
+_s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
-Twitter Bootstrap 
+Twitter Bootstrap
 
 
 */
@@ -31,7 +31,7 @@ Twitter Bootstrap
 
 /* This is a small security for too long strings titles */
 body {
-    word-wrap: break-word;
+	word-wrap: break-word;
 }
 
 /* Alignment */
@@ -145,12 +145,12 @@ object {
 }
 
 
-/* Here some needed widget styles 
+/* Here some needed widget styles
  * Most widgets are adapted in the file bootstrap-wp.js - and REALLY easy to modify! ;) */
 .widget { margin-bottom: 2em; }
 .widget_nav_menu ul.sub-menu li, .widget_pages ul.children li { padding-left: 15px; }
 
-/* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line. 
+/* Hiding the search widget's button in widgets. thats just too old-skool. :) but if you want it back, just delete the next line.
  * Note: you can change the whole appearance of the search_form() function in our searchform.php */
 .widget_search .search-form input[type="submit"] { display: none; }
 
@@ -159,41 +159,41 @@ object {
 	max-width: 100%;
 }
 
-/* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!  
+/* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!
  * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
- .comment .children { margin-left: 1.5em; } 
- 
-/*  
+ .comment .children { margin-left: 1.5em; }
+
+/*
  == Quick CSS styling tips ==
 
  You can start off in a rough direction with some minimal styles.
  See below for some tips. ;)
 
-  
- == Want to have the whole site wrapped? ==  
-  
+
+ == Want to have the whole site wrapped? ==
+
  Just fill the .container class with some background color to have a the whole site "wrapped".
- This works so easy because every main part is wrapped only once into a container class by bootstrap. 
- Try out by decommenting the next line and go from there. 
-	
+ This works so easy because every main part is wrapped only once into a container class by bootstrap.
+ Try out by decommenting the next line and go from there.
+
  .container { background: #f9f9f9; border-right: 1px solid #eee; border-left: 1px solid #eee; }
 
 
- == Want to wrap just the content and sidebar in Bootstrap style? == 
-  
- That one is a great example to show that some things are much cleaner and easier to do via just adding some HTML classes. 
- In this case, we will add just one CSS class "panel", look for example at the beginning in content.php! 
- 
- 
+ == Want to wrap just the content and sidebar in Bootstrap style? ==
+
+ That one is a great example to show that some things are much cleaner and easier to do via just adding some HTML classes.
+ In this case, we will add just one CSS class "panel", look for example at the beginning in content.php!
+
+
  == Infinite Scrolling by Jetpack ==
- You can enable this cool feature by simply decommenting the lines below and make sure you use the same classes on the right place in your html.. 
+ You can enable this cool feature by simply decommenting the lines below and make sure you use the same classes on the right place in your html..
 
-/* Globally hidden elements when Infinite Scroll is supported and in use. 
- * Older / Newer Posts Navigation (the pagination, must always be hidden), Theme Footer only when set to scrolling.. */ 
+/* Globally hidden elements when Infinite Scroll is supported and in use.
+ * Older / Newer Posts Navigation (the pagination, must always be hidden), Theme Footer only when set to scrolling.. */
 
-/* 
-.infinite-scroll .page-links, 
-.infinite-scroll.neverending .site-footer { 
+/*
+.infinite-scroll .page-links,
+.infinite-scroll.neverending .site-footer {
 	display: none;
 }
 */
@@ -203,7 +203,7 @@ object {
 /*
 .infinity-end.neverending .site-footer {
 	display: block;
-} 
+}
 */
 
-/* Hey, if you don't need my comments anymore, just delete me! :)  */  	
+/* Hey, if you don't need my comments anymore, just delete me! :)  */
