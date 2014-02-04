@@ -1,0 +1,468 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: _tk v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-02-04 12:42+0100\n"
+"Last-Translator: Fabrizio Fallico <sniper_wolf7878@yahoo.it>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: it_IT\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ _tk
+#: 404.php:14
+msgid "Oops! Something went wrong here."
+msgstr "Oops! Qualcosa è andato storto."
+
+# @ _tk
+#: 404.php:19
+msgid "Nothing could be found at this location. Maybe try a search?"
+msgstr "Non è stato trovato nulla qui. Forse una ricerca ti sarà di aiuto."
+
+# @ _tk
+#: archive.php:31
+#, php-format
+msgid "Author: %s"
+msgstr "Autore: %s"
+
+# @ _tk
+#: archive.php:39
+#, php-format
+msgid "Day: %s"
+msgstr "Giorno: %s"
+
+# @ _tk
+#: archive.php:42
+#, php-format
+msgid "Month: %s"
+msgstr "Mese: %s"
+
+# @ _tk
+#: archive.php:45
+#, php-format
+msgid "Year: %s"
+msgstr "Anno: %s"
+
+# @ _tk
+#: archive.php:48
+msgid "Asides"
+msgstr "Da parte"
+
+# @ _tk
+#: archive.php:51
+msgid "Images"
+msgstr "Immagini"
+
+# @ _tk
+#: archive.php:54
+msgid "Videos"
+msgstr "Video"
+
+# @ _tk
+#: archive.php:57
+msgid "Quotes"
+msgstr "Citazioni"
+
+# @ _tk
+#: archive.php:60
+msgid "Links"
+msgstr "Link"
+
+# @ _tk
+#: archive.php:63 sidebar.php:24
+msgid "Archives"
+msgstr "Archivio"
+
+# @ _tk
+#: comments.php:30
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un commento a &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s commenti su a &ldquo;%2$s&rdquo;"
+
+# @ _tk
+#: comments.php:38 comments.php:60
+msgid "Comment navigation"
+msgstr "Navigazione dei Commenti"
+
+# @ _tk
+#: comments.php:40 comments.php:61
+msgid "&larr; Older Comments"
+msgstr "&larr; Vecchi Commenti"
+
+# @ _tk
+#: comments.php:41 comments.php:62
+msgid "Newer Comments &rarr;"
+msgstr "Nuovi Commenti &rarr;"
+
+# @ _tk
+#: comments.php:72
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi."
+
+# @ default
+#: comments.php:78
+msgid "Leave a Reply"
+msgstr "Scrivi una risposta"
+
+# @ default
+#: comments.php:79
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Rispondi a %s"
+
+# @ default
+#: comments.php:80
+msgid "Cancel Reply"
+msgstr "Cancella Risposta"
+
+# @ default
+#: comments.php:81
+msgid "Post Comment"
+msgstr "Invia Commento"
+
+# @ default
+#: comments.php:86
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+"Puoi utilizzare questi tag e attributi <abbr title=\"HyperText Markup "
+"Language\">HTML</abbr>:"
+
+# @ _tk
+#: content-page.php:18 content-single.php:20 content.php:36 image.php:60
+msgid "Pages:"
+msgstr "Pagine:"
+
+# @ _tk
+#: content-page.php:23 content-single.php:61 content.php:70 image.php:34
+#: image.php:78 includes/template-tags.php:71
+msgid "Edit"
+msgstr "Modifica"
+
+# @ _tk
+#. translators: used between list items, there is a space after the comma
+#: content-single.php:29 content-single.php:32 content.php:47 content.php:57
+msgid ", "
+msgstr ", "
+
+# @ _tk
+#: content-single.php:37
+#, php-format
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Questo articole è stato raggato %2$s. Salva il <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+
+# @ _tk
+#: content-single.php:39
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+"Salva il <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+
+# @ _tk
+#: content-single.php:45
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Questo articole è stato pubblicato in %1$s e taggato con %2$s. Salva il <a "
+"href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+
+# @ _tk
+#: content-single.php:47
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Questo articolo è stato pubblivato in %1$s. Salva il <a href=\"%3$s\" title="
+"\"Permalink a %4$s\" rel=\"bookmark\">permalink</a>."
+
+# @ _tk
+#: content.php:33
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continua a leggere <span class=\"meta-nav\">&rarr;</span>"
+
+# @ _tk
+#: content.php:51
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Pubblicato in %1$s"
+
+# @ _tk
+#: content.php:61
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Taggato in %1$s"
+
+# @ _tk
+#: content.php:67
+msgid "Leave a comment"
+msgstr "Lascia un commento"
+
+# @ _tk
+#: content.php:67
+msgid "1 Comment"
+msgstr "1 Commento"
+
+# @ _tk
+#: content.php:67
+msgid "% Comments"
+msgstr "% Commenti"
+
+# @ _tk
+#: footer.php:22
+msgid "A Semantic Personal Publishing Platform"
+msgstr "A Semantic Personal Publishing Platform"
+
+# @ _tk
+#: footer.php:22
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Orgogliosamente creato da %s"
+
+# @ _tk
+#: footer.php:24
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+# @ _tk
+#: functions.php:69
+msgid "Header bottom menu"
+msgstr "Menu inferiore Testata"
+
+# @ _tk
+#: functions.php:81
+msgid "Sidebar"
+msgstr "Barra Laterale"
+
+# @ _tk
+#: image.php:23
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+"Pubblicato <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> il <a href=\"%3$s\" title=\"Link all'immagine "
+"originale\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Ritorna a %7$s"
+"\" rel=\"gallery\">%8$s</a>"
+
+# @ _tk
+#: image.php:39
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Precedente"
+
+# @ _tk
+#: image.php:40
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Successivo <span class=\"meta-nav\">&rarr;</span>"
+
+# @ _tk
+#: image.php:69
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Posta un commento"
+"\">Posta un commento</a> o lascia un trackbac: <a class=\"trackback-link\" "
+"href=\"%s\" title=\"Trackback URL per il tuo post\" rel=\"trackback"
+"\">Trackback URL</a>."
+
+# @ _tk
+#: image.php:71
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+"I commenti sono chiusi, ma puoi lasciare un trackback: <a class=\"trackback-"
+"link\" href=\"%s\" title=\"Trackback URL per il tuo post\" rel=\"trackback"
+"\">Trackback URL </ a>."
+
+# @ _tk
+#: image.php:73
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+"I Trackbacks sono chiusi, ma puoi<a class=\"comment-link\" href=\"#respond\" "
+"title=\"Kommentar hinterlassen\">scrivere un commento</a>."
+
+# @ _tk
+#: image.php:75
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Commenti e trackback sono attualmente chiusi."
+
+# @ _tk
+#: includes/extras.php:66
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+# @ _tk
+#: includes/template-tags.php:34
+msgid "Post navigation"
+msgstr "Navigazione Articoli"
+
+# @ _tk
+#: includes/template-tags.php:38
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+# @ _tk
+#: includes/template-tags.php:39
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+# @ _tk
+#: includes/template-tags.php:44
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Vecchi Articoli"
+
+# @ _tk
+#: includes/template-tags.php:48
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nuovi Articoli <span class=\"meta-nav\">&rarr;</span>"
+
+# @ _tk
+#: includes/template-tags.php:71
+msgid "Pingback:"
+msgstr "Pingback:"
+
+# @ _tk
+#: includes/template-tags.php:85
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">dice:</span>"
+
+# @ _tk
+#: includes/template-tags.php:89
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s alle %2$s"
+
+# @ _tk
+#: includes/template-tags.php:92
+msgid ""
+"<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> "
+"Edit"
+msgstr ""
+"<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> "
+"Modifica"
+
+# @ _tk
+#: includes/template-tags.php:96
+msgid "Your comment is awaiting moderation."
+msgstr "Il tuo commento è in attesa di moderazione."
+
+# @ _tk
+#: includes/template-tags.php:198
+msgid ", updated on "
+msgstr ", aggiornato in"
+
+# @ _tk
+#: includes/template-tags.php:201
+#, php-format
+msgid ""
+"<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
+"%2$s</span>"
+msgstr ""
+"<span class=\"posted-on\">Pubblicato in %1$s</span><span class=\"byline\"> "
+"da %2$s</span>"
+
+# @ _tk
+#: includes/template-tags.php:205
+#, php-format
+msgid "View all posts by %s"
+msgstr "Leggi tutti gli articoli di %s"
+
+# @ _tk
+#: no-results.php:13
+msgid "Nothing Found"
+msgstr "Non è stato trovato nulla"
+
+# @ _tk
+#: no-results.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto a pubblicare il tuo primo post? <a href=\"%1$s\">Inizia qui</ a>."
+
+# @ _tk
+#: no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ci dispiace, ma niente trovato nulla con i tuoi termini di ricerca. Riprova "
+"con alcune parole chiave diverse."
+
+# @ _tk
+#: no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Sembra che non riusciamo a trovare quello che stai cercando. Forse la "
+"ricerca può aiutare."
+
+# @ _tk
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Risultati della ricerca per: %s"
+
+# @ _tk
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Cerca &hellip;"
+
+# @ _tk
+#: searchform.php:10
+msgctxt "label"
+msgid "Search for:"
+msgstr "Cerca per: "
+
+# @ _tk
+#: searchform.php:12
+msgctxt "submit button"
+msgid "Search"
+msgstr "Cerca"
+
+# @ _tk
+#: sidebar.php:31
+msgid "Meta"
+msgstr "Metadati"
