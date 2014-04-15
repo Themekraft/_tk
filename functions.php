@@ -147,3 +147,24 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
+
+/**
+ * Uncomment line below if implementing admin options.
+ */
+
+// include get_template_directory() . '/includes/admin-options.php';
+ 
+/**
+ * Admin Option Examples: 
+ * Simple:
+ *  _tk_Settings::add_setting('my_setting', 'My Setting');
+ *
+ * Complex:
+ *  _tk_Settings::add_section('my_page', 'My Page');
+ *  _tk_Settings::add_section('my_section', 'My Section');
+ *  _tk_Settings::add_setting('my_setting', 'My Setting', 'my_section', 'my_page');
+ *
+ * Render Admin Page
+ * if( is_admin() )
+ *   _tk_Settings::render();
+ **/
