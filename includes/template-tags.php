@@ -50,7 +50,7 @@ function _tk_content_nav( $nav_id ) {
 			<?php endif; ?>
 
 		<?php endif; ?>
-		
+
 		</ul>
 	</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
 	<?php
@@ -80,10 +80,10 @@ function _tk_comment( $comment, $args, $depth ) {
 			<a class="pull-left" href="#">
 				<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
 			</a>
-			
+
 			<div class="media-body">
 				<div class="media-body-wrap panel panel-default">
-					
+
 					<div class="panel-heading">
 						<h5 class="media-heading"><?php printf( __( '%s <span class="says">says:</span>', '_tk' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?></h5>
 						<div class="comment-meta">
@@ -91,19 +91,19 @@ function _tk_comment( $comment, $args, $depth ) {
 								<time datetime="<?php comment_time( 'c' ); ?>">
 									<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', '_tk' ), get_comment_date(), get_comment_time() ); ?>
 								</time>
-							</a> 
+							</a>
 							<?php edit_comment_link( __( '<span style="margin-left: 5px;" class="glyphicon glyphicon-edit"></span> Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
 						</div>
 					</div>
-	
+
 					<?php if ( '0' == $comment->comment_approved ) : ?>
 						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', '_tk' ); ?></p>
 					<?php endif; ?>
-					
+
 					<div class="comment-content panel-body">
 						<?php comment_text(); ?>
 					</div><!-- .comment-content -->
-										
+
 					<?php comment_reply_link(
 						array_merge(
 							$args, array(
@@ -184,18 +184,18 @@ if ( ! function_exists( '_tk_posted_on' ) ) :
  */
 function _tk_posted_on() {
 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-	
+
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() )
 	);
-	
+
 	$time_string = sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
 		$time_string
 	);
-	
+
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ){
 		$time_string_update = '<time class="updated" datetime="%1$s">%2$s</time>';
 		$time_string_update = sprintf( $time_string_update,
@@ -208,8 +208,8 @@ function _tk_posted_on() {
 			$time_string_update
 		);
 		$time_string .= __(', updated on ', '_tk') . $time_string_update;
-	} 
-	
+	}
+
 	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', '_tk' ),
 		$time_string,
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
