@@ -1,0 +1,421 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: _tk v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-06-12 17:23:00+0000\n"
+"Last-Translator: admin <filip@tomren.it>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Norwegian\n"
+"X-Poedit-Country: NORWEGIAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:14
+#@ _tk
+msgid "Oops! Something went wrong here."
+msgstr "Oops! Noe gikk galt."
+
+#: 404.php:19
+#@ _tk
+msgid "Nothing could be found at this location. Maybe try a search?"
+msgstr "Ingenting ble funnet her. Kanskje prøv et søk?"
+
+#: archive.php:31
+#, php-format
+#@ _tk
+msgid "Author: %s"
+msgstr "Forfatter: %s"
+
+#: archive.php:39
+#, php-format
+#@ _tk
+msgid "Day: %s"
+msgstr "Dag: %s"
+
+#: archive.php:42
+#, php-format
+#@ _tk
+msgid "Month: %s"
+msgstr "Måned: %s"
+
+#: archive.php:45
+#, php-format
+#@ _tk
+msgid "Year: %s"
+msgstr "År: %s"
+
+#: archive.php:48
+#@ _tk
+msgid "Asides"
+msgstr "Vedsiden"
+
+#: archive.php:51
+#@ _tk
+msgid "Images"
+msgstr "Bilder"
+
+#: archive.php:54
+#@ _tk
+msgid "Videos"
+msgstr "Videoer"
+
+#: archive.php:57
+#@ _tk
+msgid "Quotes"
+msgstr "Sitater"
+
+#: archive.php:60
+#@ _tk
+msgid "Links"
+msgstr "Linker"
+
+#: archive.php:63
+#: sidebar.php:24
+#@ _tk
+msgid "Archives"
+msgstr "Arkiv"
+
+#: comments.php:30
+#, php-format
+#@ _tk
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "En kommentar på &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s kommentarer på &ldquo;%2$s&rdquo;"
+
+#: comments.php:38
+#: comments.php:60
+#@ _tk
+msgid "Comment navigation"
+msgstr "Kommentar-navigasjon"
+
+#: comments.php:40
+#: comments.php:61
+#@ _tk
+msgid "&larr; Older Comments"
+msgstr "&larr; eldre kommentarer"
+
+#: comments.php:41
+#: comments.php:62
+#@ _tk
+msgid "Newer Comments &rarr;"
+msgstr "Nyere kommentarer &rarr;"
+
+#: comments.php:72
+#@ _tk
+msgid "Comments are closed."
+msgstr "Kommentarer er stengt."
+
+#: comments.php:78
+#@ default
+msgid "Leave a Reply"
+msgstr "Legg igjen et svar"
+
+#: comments.php:79
+#, php-format
+#@ default
+msgid "Leave a Reply to %s"
+msgstr "Legg igjen et svar til %s"
+
+#: comments.php:80
+#@ default
+msgid "Cancel Reply"
+msgstr "Avbryt svar"
+
+#: comments.php:81
+#@ default
+msgid "Post Comment"
+msgstr "Post kommentar"
+
+#: comments.php:86
+#@ default
+msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes:"
+msgstr "Du kan bruke disse <abbr title=\"HyperText Markup Language\">HTML</abbr>-tagger og attributt:"
+
+#: content-page.php:18
+#: content-single.php:20
+#: content.php:36
+#: image.php:60
+#@ _tk
+msgid "Pages:"
+msgstr "Sider:"
+
+#: content-page.php:23
+#: content-single.php:61
+#: content.php:70
+#: image.php:34
+#: image.php:78
+#: includes/template-tags.php:71
+#@ _tk
+msgid "Edit"
+msgstr "Rediger"
+
+#. translators: used between list items, there is a space after the comma
+#: content-single.php:29
+#: content-single.php:32
+#: content.php:47
+#: content.php:57
+#@ _tk
+msgid ", "
+msgstr ", "
+
+#: content-single.php:37
+#, php-format
+#@ _tk
+msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dette innlegget ble markert med %2$s. Bokmerk den <a href=\"%3$s\" title=\"Permalink for %4$s\" rel=\"bookmark\">permanente linken</a>."
+
+#: content-single.php:39
+#, php-format
+#@ _tk
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Bokmerk den <a href=\"%3$s\" title=\"Permalink for %4$s\" rel=\"bookmark\">permanente linken</a>."
+
+#: content-single.php:45
+#, php-format
+#@ _tk
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dette innlegget ble publisert i %1$s og markert med %2$s. Bokmerk den <a href=\"%3$s\" title=\"Permalink for %4$s\" rel=\"bookmark\">permanente linken</a>."
+
+#: content-single.php:47
+#, php-format
+#@ _tk
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dette innlegget ble publisert i  %1$s. Bokmerk den <a href=\"%3$s\" title=\"Permalink for %4$s\" rel=\"bookmark\">permanente linken</a>."
+
+#: content.php:33
+#@ _tk
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Les mer <span class=\"meta-nav\">&rarr;</span>"
+
+#: content.php:51
+#, php-format
+#@ _tk
+msgid "Posted in %1$s"
+msgstr "Publisert i %1$s"
+
+#: content.php:61
+#, php-format
+#@ _tk
+msgid "Tagged %1$s"
+msgstr "Markert med %1$s"
+
+#: content.php:67
+#@ _tk
+msgid "Leave a comment"
+msgstr "Legg igjen en kommentar"
+
+#: content.php:67
+#@ _tk
+msgid "1 Comment"
+msgstr "1 kommentar"
+
+#: content.php:67
+#@ _tk
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: footer.php:22
+#@ _tk
+msgid "A Semantic Personal Publishing Platform"
+msgstr "A Semantic Personal Publishing Platform"
+
+#: footer.php:22
+#, php-format
+#@ _tk
+msgid "Proudly powered by %s"
+msgstr "Presentert med %s"
+
+#: footer.php:24
+#, php-format
+#@ _tk
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s by %2$s."
+
+#: functions.php:69
+#@ _tk
+msgid "Header bottom menu"
+msgstr "Meny under header"
+
+#: functions.php:81
+#@ _tk
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: image.php:23
+#, php-format
+#@ _tk
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "Publisert <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> kl <a href=\"%3$s\" title=\"Link til originalbildet\">%4$s &times; %5$s</a> i <a href=\"%6$s\" title=\"Returner til %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: image.php:39
+#@ _tk
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Forrige"
+
+#: image.php:40
+#@ _tk
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Neste <span class=\"meta-nav\">&rarr;</span>"
+
+#: image.php:69
+#, php-format
+#@ _tk
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Legg igjen en kommentar\">Legg igjen en kommentar</a> eller legg igjen en \"trackback\": <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for ditt bidrag\" rel=\"trackback\">Trackback URL</a>."
+
+#: image.php:71
+#, php-format
+#@ _tk
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Kommentarer er stengt, men du kan legge igjen en \"trackback\": <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for ditt bidrag\" rel=\"trackback\">Trackback URL</a>."
+
+#: image.php:73
+#@ _tk
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "\"Trackbacks\" er stengt, men du kan <a class=\"comment-link\" href=\"#respond\" title=\"Legg igjen en kommentar\">legge igjen en kommentar</a>."
+
+#: image.php:75
+#@ _tk
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Både kommentarer og trackbacks er stengt."
+
+#: includes/extras.php:66
+#, php-format
+#@ _tk
+msgid "Page %s"
+msgstr "Side %s"
+
+#: includes/template-tags.php:34
+#@ _tk
+msgid "Post navigation"
+msgstr "Post-navigasjon"
+
+#: includes/template-tags.php:38
+#@ _tk
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: includes/template-tags.php:39
+#@ _tk
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: includes/template-tags.php:44
+#@ _tk
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Eldre innlegg"
+
+#: includes/template-tags.php:48
+#@ _tk
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyere innlegg <span class=\"meta-nav\">&rarr;</span>"
+
+#: includes/template-tags.php:71
+#@ _tk
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: includes/template-tags.php:85
+#, php-format
+#@ _tk
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">sa:</span>"
+
+#: includes/template-tags.php:89
+#, php-format
+#@ _tk
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s kl %2$s"
+
+#: includes/template-tags.php:92
+#@ _tk
+msgid "<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> Edit"
+msgstr "<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> rediger"
+
+#: includes/template-tags.php:96
+#@ _tk
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar venter på godkjenning."
+
+#: includes/template-tags.php:198
+#@ _tk
+msgid ", updated on "
+msgstr ", oppdatert på "
+
+#: includes/template-tags.php:201
+#, php-format
+#@ _tk
+msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr "<span class=\"posted-on\">Publisert %1$s</span><span class=\"byline\"> av %2$s</span>"
+
+#: includes/template-tags.php:205
+#, php-format
+#@ _tk
+msgid "View all posts by %s"
+msgstr "Se alle innlegg av %s"
+
+#: no-results.php:13
+#@ _tk
+msgid "Nothing Found"
+msgstr "Ingenting funnet"
+
+#: no-results.php:19
+#, php-format
+#@ _tk
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Klar til å publisere ditt første innlegg? <a href=\"%1$s\">Start her</a>."
+
+#: no-results.php:23
+#@ _tk
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Beklager, men ingenting samsvarer med dine søkevilkår. Vennligst prøv igjen med andre søkeord."
+
+#: no-results.php:28
+#@ _tk
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Det ser ut til at vi ikke finner det du leter etter. Kanskje et søk kan hjelpe."
+
+#: search.php:13
+#, php-format
+#@ _tk
+msgid "Search Results for: %s"
+msgstr "Søkeresultat for: %s"
+
+#: searchform.php:10
+#@ _tk
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Søk &hellip;"
+
+#: searchform.php:10
+#@ _tk
+msgctxt "label"
+msgid "Search for:"
+msgstr "Søk etter: "
+
+#: searchform.php:12
+#@ _tk
+msgctxt "submit button"
+msgid "Search"
+msgstr "Søk"
+
+#: sidebar.php:31
+#@ _tk
+msgid "Meta"
+msgstr "Metadata"
+
