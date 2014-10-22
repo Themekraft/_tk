@@ -62,8 +62,6 @@ done
 rm $TEMP1
 rm $TEMP2
 rm $TEMP3
-rm $TEMP4
-
 
 if [ "$NEWREPO" == "y" ]; then
 	echo "Initialising new git repo..."
