@@ -1,0 +1,568 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Theme Kraft Framework\n"
+"POT-Creation-Date: 2014-10-18 11:31+0100\n"
+"PO-Revision-Date: 2014-10-18 11:41+0100\n"
+"Last-Translator: Jan Fajcak <ja@fajo.name>\n"
+"Language-Team: Fajo <ja@fajo.name>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-KeywordsList: __;_e;_nx;_ex;esc_attr_x;esc_attr_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:14
+msgid "Oops! Something went wrong here."
+msgstr "Zdá sa, že tu nič nie je."
+
+#: ../404.php:19
+msgid "Nothing could be found at this location. Maybe try a search?"
+msgstr ""
+"Možno príde vhod niektorý z nasledujúcich odkazov alebo vyhľadávanie?  "
+
+#: ../archive.php:31
+#, php-format
+msgid "Author: %s"
+msgstr "Archív autora: %s "
+
+#: ../archive.php:39
+#, php-format
+msgid "Day: %s"
+msgstr "Deň: %s"
+
+#: ../archive.php:42
+#, php-format
+msgid "Month: %s"
+msgstr "Mesiac: %s "
+
+#: ../archive.php:45
+#, php-format
+msgid "Year: %s"
+msgstr "Rok: %s"
+
+#: ../archive.php:48
+msgid "Asides"
+msgstr "Poznámka"
+
+#: ../archive.php:51
+msgid "Images"
+msgstr "Obrázky"
+
+#: ../archive.php:54
+msgid "Videos"
+msgstr "Video"
+
+#: ../archive.php:57
+msgid "Quotes"
+msgstr "Citát"
+
+#: ../archive.php:60
+msgid "Links"
+msgstr "Odkazy"
+
+#: ../archive.php:63 ../sidebar.php:24
+msgid "Archives"
+msgstr "Archívy"
+
+#: ../comments.php:30
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr "Jedna reakcia na &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:38 ../comments.php:60
+msgid "Comment navigation"
+msgstr "Navigácia komentáre"
+
+#: ../comments.php:40 ../comments.php:61
+msgid "&larr; Older Comments"
+msgstr "&larr; Staršie komentáre"
+
+#: ../comments.php:41 ../comments.php:62
+msgid "Newer Comments &rarr;"
+msgstr "Novšie komentáre &rarr;"
+
+#: ../comments.php:72
+msgid "Comments are closed."
+msgstr "Komentáre sú zatvorené."
+
+#: ../comments.php:78
+msgid "Leave a Reply"
+msgstr "Odpovedajte"
+
+#: ../comments.php:79
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Odpovedajte na %s"
+
+#: ../comments.php:80
+msgid "Cancel Reply"
+msgstr "Zrušiť odpoveď "
+
+#: ../comments.php:81
+msgid "Post Comment"
+msgstr "Komentár ku článku "
+
+#: ../comments.php:86
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes:"
+msgstr ""
+"Môžete použiť tieto <abbr title=\"HyperText Markup Language\">HTML</abbr> "
+"značky a atribúty: "
+
+#: ../content-page.php:18 ../content-single.php:20 ../content.php:36
+#: ../image.php:60
+msgid "Pages:"
+msgstr "Stránky:"
+
+#: ../content-page.php:23 ../content-single.php:61 ../content.php:70
+#: ../image.php:34 ../image.php:78 ../includes/template-tags.php:73
+msgid "Edit"
+msgstr "Upraviť"
+
+#: ../content-single.php:29 ../content-single.php:32 ../content.php:47
+#: ../content.php:57
+msgid ", "
+msgstr ", "
+
+#: ../content-single.php:37
+#, php-format
+msgid ""
+"This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink "
+"to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Príspevok bol označený ako %2$s. Pridajte do <a href=\"%3$s\" title=\"Trvalý "
+"odkaz na %4$s\" rel=\"bookmark\">obľúbených odkazov</a>."
+
+#: ../content-single.php:39
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+"Pridajte do <a href=\"%3$s\" title=\"Trvalý odkaz na %4$s\" rel=\"bookmark"
+"\">obľúbených odkazov</a>."
+
+#: ../content-single.php:45
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Príspevok bol publikovaný v kategórii %1$s a označený ako %2$s. Pridajte do "
+"<a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">obľúbených "
+"odkazov</a>. "
+
+#: ../content-single.php:47
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+"Publikované v kategórii %1$s. Pridajte príspevok do <a href=\"%3$s\" title="
+"\"Trvalý odkaz na %4$s\" rel=\"bookmark\">obľúbených odkazov</a>."
+
+#: ../content.php:33
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Pokračujte v čítaní <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../content.php:51
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Kategória: %1$s"
+
+#: ../content.php:61
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Označené %1$s"
+
+#: ../content.php:67
+msgid "Leave a comment"
+msgstr "Vložte komentár"
+
+#: ../content.php:67
+msgid "1 Comment"
+msgstr "Komentáre: 1"
+
+#: ../content.php:67
+msgid "% Comments"
+msgstr "Komentáre: %"
+
+#: ../footer.php:22
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "S hrdosťou používame %s"
+
+#: ../footer.php:24
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Téma: %1$s od %2$s."
+
+#: ../functions.php:69
+msgid "Header bottom menu"
+msgstr "Menu v záhlaví"
+
+#: ../functions.php:81
+msgid "Sidebar"
+msgstr "Bočný panel"
+
+#: ../image.php:23
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+"Publikované <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a> "
+
+#: ../image.php:39
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Staršie príspevky "
+
+#: ../image.php:40
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Novšie príspevky <span class=\"meta-nav\">&rarr;</span> "
+
+#: ../image.php:69
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Vložte komentár\">Vložte "
+"komentár</a> alebo zanechajte spätný odkaz: <a class=\"trackback-link\" href="
+"\"%s\" title=\"URL spätného odkazu pre tento príspevok\" rel=\"trackback"
+"\">URL spätného odkazu</a>."
+
+#: ../image.php:71
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+"Komentáre sú zatvorené, no môžete zanechať spätný odkaz: <a class="
+"\"trackback-link\" href=\"%s\" title=\"URL spätného odkazu pre tento "
+"príspevok\" rel=\"trackback\">URL spätného odkazu</a>."
+
+#: ../image.php:73
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+"Spätné odkazy sú zatvorené, no môžete <a class=\"comment-link\" href="
+"\"#respond\" title=\"Vložiť komentár\">vložiť komentár</a>."
+
+#: ../image.php:75
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Komentáre a spätné odkazy sú zatvorené."
+
+#: ../includes/extras.php:66
+#, php-format
+msgid "Page %s"
+msgstr "Stránka %s"
+
+#: ../includes/template-tags.php:34
+msgid "Post navigation"
+msgstr "Navigácia príspevky"
+
+#: ../includes/template-tags.php:45
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Staršie príspevky"
+
+#: ../includes/template-tags.php:49
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Novšie príspevky <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../includes/template-tags.php:73
+msgid "Pingback:"
+msgstr "Cinknutie:"
+
+#: ../includes/template-tags.php:88
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s"
+
+#: ../includes/template-tags.php:95
+msgid ""
+"<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> "
+"Edit"
+msgstr ""
+"<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> "
+"Upraviť "
+
+#: ../includes/template-tags.php:100
+msgid "Your comment is awaiting moderation."
+msgstr "Váš komentár čaká na schválenie."
+
+#: ../includes/template-tags.php:210
+msgid ", updated on "
+msgstr ", aktualizované "
+
+#: ../includes/template-tags.php:213
+#, php-format
+msgid ""
+"<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by "
+"%2$s</span>"
+msgstr ""
+"<span class=\"posted-on\">Publikované dňa: %1$s</span><span class=\"byline"
+"\">, autor: %2$s</span>"
+
+#: ../includes/template-tags.php:217
+#, php-format
+msgid "View all posts by %s"
+msgstr "Všetky príspevky podľa %s "
+
+#: ../no-results.php:13
+msgid "Nothing Found"
+msgstr "Obsah nebol nájdený"
+
+#: ../no-results.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Nastal čas publikovať prvý článok? <a href=\"%1$s\">Poďme na to</a>."
+
+#: ../no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Je nám ľúto, ale hľadaný výraz sa nezhoduje s obsahom týchto stránkok. "
+"Skúste zadať iné kľúčové slová."
+
+#: ../no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Stránku nie je možné nájsť. Možno príde vhod vyhľadávanie?"
+
+#: ../search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Výsledky vyhľadávania pre: %s"
+
+#: ../searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Hľadať výraz &hellip; "
+
+#: ../searchform.php:10
+msgid "Search for:"
+msgstr "Hľadať:"
+
+#: ../searchform.php:12
+msgctxt "submit button"
+msgid "Search"
+msgstr "Hľadať"
+
+#: ../sidebar.php:31
+msgid "Meta"
+msgstr "Meta"
+
+#~ msgid "Kto sme"
+#~ msgstr "Kto sme"
+
+#~ msgid "Kto sme TOP"
+#~ msgstr "Kto sme TOP"
+
+#~ msgid "Sidebar Footer 1"
+#~ msgstr "Sidebar Footer 1"
+
+#~ msgid "Sidebar Footer 2"
+#~ msgstr "Sidebar Footer 2"
+
+#~ msgid "Sidebar Footer 3"
+#~ msgstr "Sidebar Footer 3"
+
+#~ msgid "Sidebar Footer 4"
+#~ msgstr "Sidebar Footer 4"
+
+#~ msgid "Oops! That page can&rsquo;t be found."
+#~ msgstr "Túto stránku nie je možné nájsť."
+
+#~ msgid "Most Used Categories"
+#~ msgstr "Najpoužívanejšie kategórie"
+
+#~ msgid "Try looking in the monthly archives. %1$s"
+#~ msgstr "Archívy podľa mesiacov: %1$s"
+
+#~ msgid "Galleries"
+#~ msgstr "Galéria"
+
+#~ msgid "Statuses"
+#~ msgstr "Stav"
+
+#~ msgid "Audios"
+#~ msgstr "Audio"
+
+#~ msgid "Chats"
+#~ msgstr "Rozhovor"
+
+#~ msgid "http://wordpress.org/"
+#~ msgstr "http://wordpress.org/"
+
+#~ msgid "Primary Menu"
+#~ msgstr "Hlavné menu"
+
+#~ msgid "Menu"
+#~ msgstr "Menu"
+
+#~ msgid "Skip to content"
+#~ msgstr "Ísť na obsah"
+
+#~ msgid "Posts navigation"
+#~ msgstr "Navigácia príspevky"
+
+#~ msgid "Top Menu"
+#~ msgstr "Top Menu"
+
+#~ msgid "Footer Menu"
+#~ msgstr "Footer Menu"
+
+#~ msgid "<span class=\"posted-on\">%1$s</span>"
+#~ msgstr "<span class=\"posted-on\">%1$s</span>"
+
+#~ msgid "Maybe try one of the links below or a search?"
+#~ msgstr "alebo sa môžeme vrátiť"
+
+#~ msgid "Back to home"
+#~ msgstr "na štart"
+
+#~ msgid "Page "
+#~ msgstr "Stránka "
+
+#~ msgid " of "
+#~ msgstr " z "
+
+#~ msgid "Previous"
+#~ msgstr "Predchádzajúca"
+
+#~ msgid "Next"
+#~ msgstr "Nasledujúca"
+
+#~ msgid "Footer 5"
+#~ msgstr "Footer 5"
+
+#~ msgid "Login"
+#~ msgstr "Prihlásiť"
+
+#~ msgid "My Account"
+#~ msgstr "Môj účet"
+
+#~ msgid "Logout"
+#~ msgstr "Odhlásiť"
+
+#~ msgid "View your shopping cart"
+#~ msgstr "Zobraziť košík"
+
+#~ msgid "hľadať produkty"
+#~ msgstr "hľadať produkty"
+
+#~ msgid "Posted on: %1$s"
+#~ msgstr "Pridané dňa: %1$s"
+
+#~ msgid ""
+#~ "Posted on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\">%3$s</a><span "
+#~ "class=\"byline\"> by <span class=\"author vcard\"><a class=\"url fn n\" "
+#~ "href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span></span>"
+#~ msgstr ""
+#~ "Pridané dňa: <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\">%3$s</"
+#~ "a><span class=\"byline\">, Autor: <span class=\"author vcard\"><a class="
+#~ "\"url fn n\" href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span></"
+#~ "span>"
+
+#~ msgid "Category Archives: %s"
+#~ msgstr "Archív kategórií: %s"
+
+#~ msgid "Tag Archives: %s"
+#~ msgstr "Archív značiek: %s"
+
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Archív podľa dní: %s"
+
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Archív podľa rokov: %s"
+
+#~ msgid "Permalink to %s"
+#~ msgstr "Trvalý odkaz na %s"
+
+#~ msgid "About me"
+#~ msgstr "O mne"
+
+#~ msgid "Contact me"
+#~ msgstr "Napíš mi"
+
+#~ msgid "Recent posts"
+#~ msgstr "Najnovšie príspevky"
+
+#~ msgid "&larr; Previous"
+#~ msgstr "&larr; Predchádzajúci"
+
+#~ msgid "Next &rarr;"
+#~ msgstr "Nasledujúci &rarr;"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Upraviť)"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s o %2$s"
+
+#~ msgid "<time class=\"entry-date\" datetime=\"%1$s\">%2$s</time>"
+#~ msgstr "<time class=\"entry-date\" datetime=\"%1$s\">%2$s</time>"
+
+#~ msgid "Hide header ribbon"
+#~ msgstr "Stužka v hlavičke"
+
+#~ msgid "Switch theme color"
+#~ msgstr "Farebná varianta témy"
+
+#~ msgid "Theme Options"
+#~ msgstr "Nastavenia témy"
+
+#~ msgid "Hipster"
+#~ msgstr "Hnedá"
+
+#~ msgid "Hipster no background"
+#~ msgstr "Hnedá bez pozadia"
+
+#~ msgid "Earth"
+#~ msgstr "Zelená"
+
+#~ msgid "Earth no background"
+#~ msgstr "Zelená bez pozadia"
+
+#~ msgid "Sky"
+#~ msgstr "Modrá"
+
+#~ msgid "Sky no background"
+#~ msgstr "Modrá bez pozadia"
+
+#~ msgid "Switch css select input"
+#~ msgstr "Zvoľ farebnú variantu témy"
+
+#~ msgid "Hide header ribbon."
+#~ msgstr "Skry stužku v hlavičke."
+
+#~ msgid "%s Theme Options"
+#~ msgstr "Nastavenia témy %s"
+
+#~ msgid "of"
+#~ msgstr "z"
+
+#~ msgid "&larr;"
+#~ msgstr "&larr;"
+
+#~ msgid "&rarr;"
+#~ msgstr "&rarr;"
