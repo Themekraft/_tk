@@ -6,6 +6,11 @@ Language:       German
 Version:        1.0
 Translator:     Martina Beil - www.comdraft.de
 
+== fr_CA ==
+
+Language:       French (Canadian)
+Version:        1.0
+Translator:     Ryan Macdonald - ryanmacdonald.ca
 
 == How to translate to your language ==
 
