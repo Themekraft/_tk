@@ -75,10 +75,10 @@ if ( post_password_required() )
 	<?php comment_form( $args = array(
 			  'id_form'           => 'commentform',  // that's the wordpress default value! delete it or edit it ;)
 			  'id_submit'         => 'commentsubmit',
-			  'title_reply'       => __( 'Leave a Reply' ),  // that's the wordpress default value! delete it or edit it ;)
-			  'title_reply_to'    => __( 'Leave a Reply to %s' ),  // that's the wordpress default value! delete it or edit it ;)
-			  'cancel_reply_link' => __( 'Cancel Reply' ),  // that's the wordpress default value! delete it or edit it ;)
-			  'label_submit'      => __( 'Post Comment' ),  // that's the wordpress default value! delete it or edit it ;)
+			  'title_reply'       => __( 'Leave a Reply', '_tk' ),  // that's the wordpress default value! delete it or edit it ;)
+			  'title_reply_to'    => __( 'Leave a Reply to %s', '_tk' ),  // that's the wordpress default value! delete it or edit it ;)
+			  'cancel_reply_link' => __( 'Cancel Reply', '_tk' ),  // that's the wordpress default value! delete it or edit it ;)
+			  'label_submit'      => __( 'Post Comment', '_tk' ),  // that's the wordpress default value! delete it or edit it ;)
 
 			  'comment_field' =>  '<p><textarea placeholder="Start typing..." id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 
