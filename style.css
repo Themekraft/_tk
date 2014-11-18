@@ -9,8 +9,6 @@ License: GNU General Public License v3.0 / License URI: http://www.gnu.org/licen
 License URI: see license.txt
 Tags: gray, light, one-column, two-columns, three-columns, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, rtl-language-support, sticky-post,  theme-options, threaded-comments, translation-ready
 
-
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
@@ -93,7 +91,9 @@ img[class*="wp-image-"] {
 .gallery dd {
 	margin: 0;
 }
-
+.gallery-caption {
+	display: block;
+}
 
 /* Make sure embeds and iframes fit their containers */
 embed,
@@ -136,6 +136,12 @@ object {
 }
 .hentry {
 	margin: 0 0 1.5em;
+}
+.sticky {
+	display: block;
+}
+.bypostauthor {
+	display: block;
 }
 
 
