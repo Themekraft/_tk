@@ -5,9 +5,9 @@ Author: ThemeKraft
 Author URI: http://themekraft.com/
 Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.
 Version: 1.1.2
-License: GNU General Public License
+License: GNU General Public License v3.0 / License URI: http://www.gnu.org/licenses/gpl-3.0.html
 License URI: see license.txt
-Tags: responsive-layout, right-sidebar, custom-background, custom-header
+Tags: gray, light, one-column, two-columns, three-columns, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, rtl-language-support, sticky-post,  theme-options, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -15,9 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into
 the _s starter theme from Automattic, the guys behind WordPress.
 
-_s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc.
-
-Twitter Bootstrap
+_s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc. Twitter Bootstrap
 
 
 */
@@ -181,6 +179,21 @@ display: block;
 /* Nested comments? They are threaded and nested already, you just need to add your own styling to finalize!
  * For example with some margin, like the line below ;) Delete, modify, change classes in HTML if you desire another style */
  .comment .children { margin-left: 1.5em; }
+
+/**
+* Some WP Theme Repository requirements
+*/
+
+.sticky {
+}
+
+.gallery-caption {
+
+}
+
+.bypostauthor {
+
+}
 
 /*
  == Quick CSS styling tips ==
