@@ -37,6 +37,10 @@ OR
 * Search for: <code>&nbsp;_tk</code> and replace with: <code>&nbsp;Megatherium</code>
 * Search for: `_tk-` and replace with: `megatherium-`
 
+OR
+
+* Just execute build_script.sh, which will ask you about your new theme's name, the destination directory, and will do all the renaming for you.
+
 Then, update the stylesheet header in style.css and the links in footer.php with your own information. Next, update or delete this readme.
 
 Now you're ready to go! The next step is easy to say but harder to do: make an awesome WordPress theme. :)
@@ -46,6 +50,10 @@ Good luck!
 
 == Changelog ==
 ---------------
+= 1.1.2 =
+
+Bootstrap update to 3.2
+
 
 = 1.1 =
 
