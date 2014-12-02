@@ -83,6 +83,7 @@
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
 
+<?php // substitute the classes "container-fluid" and "row-fluid" below if you want a wider content area ?>
 <div class="main-content">
 	<div class="container">
 		<div class="row">
