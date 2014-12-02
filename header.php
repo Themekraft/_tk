@@ -25,6 +25,7 @@
 	<?php do_action( 'before' ); ?>
 
 <header id="masthead" class="site-header" role="banner">
+<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
 			<div class="site-header-inner col-sm-12">
@@ -48,6 +49,7 @@
 </header><!-- #masthead -->
 
 <nav class="site-navigation">
+<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
 			<div class="site-navigation-inner col-sm-12">
@@ -83,8 +85,8 @@
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
 
-<?php // substitute the classes "container-fluid" and "row-fluid" below if you want a wider content area ?>
 <div class="main-content">
+<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
 			<div id="content" class="main-content-inner col-sm-12 col-md-8">

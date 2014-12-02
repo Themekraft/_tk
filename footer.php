@@ -13,7 +13,7 @@
 </div><!-- close .main-content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-<?php // substitute the classes "container-fluid" and "row-fluid" below if you want a wider content area ?>
+<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
 			<div class="site-footer-inner col-sm-12">
