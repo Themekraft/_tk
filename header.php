@@ -12,12 +12,12 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
+
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	
+
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	
+
 	<?php wp_head(); ?>
 </head>
 
@@ -39,7 +39,7 @@
 
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
+					<p class="lead"><?php bloginfo( 'description' ); ?></p>
 				</div>
 
 			</div>
