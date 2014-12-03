@@ -12,12 +12,12 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
+
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	
+
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	
+
 	<?php wp_head(); ?>
 </head>
 
@@ -25,6 +25,7 @@
 	<?php do_action( 'before' ); ?>
 
 <header id="masthead" class="site-header" role="banner">
+<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
 			<div class="site-header-inner col-sm-12">
@@ -39,7 +40,7 @@
 
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
+					<p class="lead"><?php bloginfo( 'description' ); ?></p>
 				</div>
 
 			</div>
@@ -48,6 +49,7 @@
 </header><!-- #masthead -->
 
 <nav class="site-navigation">
+<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
 			<div class="site-navigation-inner col-sm-12">
@@ -84,6 +86,7 @@
 </nav><!-- .site-navigation -->
 
 <div class="main-content">
+<?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
 			<div id="content" class="main-content-inner col-sm-12 col-md-8">

@@ -9,7 +9,7 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
+	<header>
 		<h1 class="page-title"><?php _e( 'Nothing Found', '_tk' ); ?></h1>
 	</header><!-- .page-header -->
 
