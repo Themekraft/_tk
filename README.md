@@ -21,8 +21,6 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 == Getting Started ==
 ---------------------
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_tk` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
-
 If you want to set things up manually, download `_tk` from github. The first thing you want to do is copy the `_tk` directory and change the name to something else - Like, say, `megatherium` - then you'll need to do a three-step find and replace on the name in all the templates.
 
 1. Search for `'_tk'` (inside single quotations) to capture the text domain.
