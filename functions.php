@@ -25,35 +25,31 @@ function _tk_setup() {
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
 
-	if ( function_exists( 'add_theme_support' ) ) {
+	/**
+	 * Add default posts and comments RSS feed links to head
+	*/
+	add_theme_support( 'automatic-feed-links' );
 
-		/**
-		 * Add default posts and comments RSS feed links to head
-		*/
-		add_theme_support( 'automatic-feed-links' );
+	/**
+	 * Enable support for Post Thumbnails on posts and pages
+	 *
+	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+	*/
+	add_theme_support( 'post-thumbnails' );
 
-		/**
-		 * Enable support for Post Thumbnails on posts and pages
-		 *
-		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-		*/
-		add_theme_support( 'post-thumbnails' );
+	/**
+	 * Enable support for Post Formats
+	*/
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 
-		/**
-		 * Enable support for Post Formats
-		*/
-		add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
-		/**
-		 * Setup the WordPress core custom background feature.
-		*/
-		add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
-
-	}
-
+	/**
+	 * Setup the WordPress core custom background feature.
+	*/
+	add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
+		'default-color' => 'ffffff',
+		'default-image' => '',
+	) ) );
+	
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory

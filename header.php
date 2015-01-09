@@ -57,7 +57,7 @@
 					<div class="navbar-header">
 					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-						<span class="sr-only">Toggle navigation</span>
+						<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
