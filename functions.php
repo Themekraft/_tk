@@ -89,6 +89,9 @@ add_action( 'widgets_init', '_tk_widgets_init' );
  */
 function _tk_scripts() {
 
+	// Import the necessary TK Bootstrap WP CSS additions
+	wp_enqueue_style( '_tk-bootstrap-wp', get_template_directory_uri() . '/includes/css/bootstrap-wp.css' );
+
 	// load bootstrap css
 	wp_enqueue_style( '_tk-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.min.css' );
 
