@@ -13,19 +13,19 @@ jQuery( document ).ready( function( $ ) {
     } );
     wp.customize( 'blogdescription', function( value ) {
         value.bind( function( to ) {
-            $( '.site-description' ).text( to );
+            $( '.lead' ).text( to );
         } );
     } );
     // Header text color.
     wp.customize( 'header_textcolor', function( value ) {
         value.bind( function( to ) {
             if ( 'blank' === to ) {
-                $( '.site-title, .site-description' ).css( {
+                $( '.site-title, .lead' ).css( {
                     'clip': 'rect(1px, 1px, 1px, 1px)',
                     'position': 'absolute'
                 } );
             } else {
-                $( '.site-title, .site-description' ).css( {
+                $( '.site-title, .lead' ).css( {
                     'clip': 'auto',
                     'color': to,
                     'position': 'relative'
