@@ -73,7 +73,7 @@ function _tk_header_style() {
 	?>
 		.site-title a,
 		.site-description {
-			color: #<?php echo $header_text_color; ?>;
+			color: #<?php echo echo esc_attr( $header_text_color ); ?>;
 		}
 	<?php endif; ?>
 	</style>
@@ -120,8 +120,8 @@ function _tk_admin_header_image() {
 	$header_image = get_header_image();
 ?>
 	<div id="headimg">
-		<h1 class="displaying-header-text"><a id="name"<?php echo $style; ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-		<div class="displaying-header-text" id="desc"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></div>
+		<h1 class="displaying-header-text"><a id="name"<?php echo esc_attr( $style ) ; ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class="displaying-header-text" id="desc"<?php echo esc_attr( $style ) ?>><?php bloginfo( 'description' ); ?></div>
 		<?php if ( ! empty( $header_image ) ) : ?>
 			<img src="<?php echo esc_url( $header_image ); ?>" alt="">
 		<?php endif; ?>
