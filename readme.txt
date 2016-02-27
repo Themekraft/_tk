@@ -1,8 +1,8 @@
-Theme Name: _tk
-Theme URI: http://themekraft.com/store/_tk-free-wordpress-starter-theme-based-on-twitter-bootstrap/
-Author: ThemeKraft
-Author URI: http://themekraft.com/
-Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress. You can find me on GitHub. Fork me! I'm waiting for you ;)
+Theme Name: _sx
+Theme URI: https://github.com/sameer-shelavale/_sx
+Author: Sameer Shelavale
+Author URI: https://github.com/sameer-shelavale
+Description: Hi, I am the ultra minimal starter theme _sx, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress. You can find me on GitHub. Fork me! I'm waiting for you ;)
 Version: 1.1.9
 License: GNU General Public License v3.0 /
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -13,7 +13,10 @@ Tags: gray, light, two-columns, right-sidebar, responsive-layout, custom-backgro
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into
+_sx is forked from _sx theme from Themekraft(http://themekraft.com)
+http://themekraft.com/store/_sx-free-wordpress-starter-theme-based-on-twitter-bootstrap
+
+The _sx theme itself is based on
 the _s starter theme from Automattic, the guys behind WordPress.
 
 _s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc. Twitter Bootstrap
@@ -42,12 +45,12 @@ Credits:
 
 *************************************************************
 
-The _tk Project on Github - https://github.com/Themekraft/_tk/
+The _sx Project on Github - https://github.com/sameer-shelavale/_sx
 
 *************************************************************
 
 
-Thanks for using _tk Theme.
+Thanks for using _sx Theme.
 We hope you enjoy it!
 
 *************************************************************

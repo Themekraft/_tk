@@ -87,6 +87,12 @@
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
 
+<!-- Banner start-->
+<div class="container banner-container">
+    <?php dynamic_sidebar( 'banner' ); ?>
+</div>
+<!-- Banner end -->
+
 <div class="main-content">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">

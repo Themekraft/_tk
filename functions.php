@@ -81,6 +81,23 @@ function _tk_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+
+    register_sidebar( array(
+        'id'          => 'banner',
+        'name'        => 'Main Banner',
+        'description' => __( 'Main Banner.', '_tk' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+    ) );
+
+    register_sidebar( array(
+        'id'          => 'footer',
+        'name'        => 'Footer',
+        'description' => __( 'Footer.', '_tk' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+    ) );
+
 }
 add_action( 'widgets_init', '_tk_widgets_init' );
 
@@ -149,3 +166,24 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
+
+
+/*
+ * add new widget area for banner
+ */
+function cactus_banner_widget( $content ) {
+    if ( is_singular( array( 'post', 'page' ) ) && is_active_sidebar( 'banner' ) && is_main_query() ) {
+        dynamic_sidebar('banner');
+    }
+    return $content;
+}
+
+/*
+ * add new widget area for footer
+ */
+function cactus_footer_widget( $content ) {
+    if ( is_singular( array( 'post', 'page' ) ) && is_active_sidebar( 'footer' ) && is_main_query() ) {
+        dynamic_sidebar('footer');
+    }
+    return $content;
+}
