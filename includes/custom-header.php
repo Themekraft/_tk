@@ -13,41 +13,41 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package _tk
+ * @package _sx
  */
 
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses _tk_header_style()
- * @uses _tk_admin_header_style()
- * @uses _tk_admin_header_image()
+ * @uses _sx_header_style()
+ * @uses _sx_admin_header_style()
+ * @uses _sx_admin_header_image()
  *
- * @package _tk
+ * @package _sx
  */
-function _tk_custom_header_setup() {
+function _sx_custom_header_setup() {
 	if ( function_exists( 'add_theme_support' ) ) {
-		add_theme_support( 'custom-header', apply_filters( '_tk_custom_header_args', array(
+		add_theme_support( 'custom-header', apply_filters( '_sx_custom_header_args', array(
 			'default-image'          => '',
 			'default-text-color'     => '000',
 			'width'                  => 1170,
 			'height'                 => 250,
 			'flex-height'            => true,
-			'wp-head-callback'       => '_tk_header_style',
-			'admin-head-callback'    => '_tk_admin_header_style',
-			'admin-preview-callback' => '_tk_admin_header_image',
+			'wp-head-callback'       => '_sx_header_style',
+			'admin-head-callback'    => '_sx_admin_header_style',
+			'admin-preview-callback' => '_sx_admin_header_image',
 		) ) );
 	}
 }
-add_action( 'after_setup_theme', '_tk_custom_header_setup' );
+add_action( 'after_setup_theme', '_sx_custom_header_setup' );
 
-if ( ! function_exists( '_tk_header_style' ) ) :
+if ( ! function_exists( '_sx_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see _tk_custom_header_setup().
+ * @see _sx_custom_header_setup().
  */
-function _tk_header_style() {
+function _sx_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -79,15 +79,15 @@ function _tk_header_style() {
 	</style>
 	<?php
 }
-endif; // _tk_header_style
+endif; // _sx_header_style
 
-if ( ! function_exists( '_tk_admin_header_style' ) ) :
+if ( ! function_exists( '_sx_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see _tk_custom_header_setup().
+ * @see _sx_custom_header_setup().
  */
-function _tk_admin_header_style() {
+function _sx_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -107,15 +107,15 @@ function _tk_admin_header_style() {
 	</style>
 <?php
 }
-endif; // _tk_admin_header_style
+endif; // _sx_admin_header_style
 
-if ( ! function_exists( '_tk_admin_header_image' ) ) :
+if ( ! function_exists( '_sx_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see _tk_custom_header_setup().
+ * @see _sx_custom_header_setup().
  */
-function _tk_admin_header_image() {
+function _sx_admin_header_image() {
 	$style        = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 	$header_image = get_header_image();
 ?>
@@ -128,4 +128,4 @@ function _tk_admin_header_image() {
 	</div>
 <?php
 }
-endif; // _tk_admin_header_image
+endif; // _sx_admin_header_image

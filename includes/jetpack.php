@@ -3,14 +3,14 @@
  * Jetpack Compatibility File
  * See: http://jetpack.me/
  *
- * @package _tk
+ * @package _sx
  */
 
 /**
  * Add theme support for Infinite Scroll.
  * See: http://jetpack.me/support/infinite-scroll/
  */
-function _tk_jetpack_setup() {
+function _sx_jetpack_setup() {
 	if ( function_exists( 'add_theme_support' ) ) {
 		add_theme_support( 'infinite-scroll', array(
 			'container' => 'content',
@@ -18,4 +18,4 @@ function _tk_jetpack_setup() {
 		) );
 	}
 }
-add_action( 'after_setup_theme', '_tk_jetpack_setup' );
+add_action( 'after_setup_theme', '_sx_jetpack_setup' );

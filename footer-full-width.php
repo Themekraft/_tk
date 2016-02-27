@@ -4,7 +4,7 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package _tk
+ * @package _sx
  */
 ?>
 			</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
@@ -26,10 +26,10 @@
 			<div class="site-footer-inner col-sm-12">
 
 				<div class="site-info">
-					<?php do_action( '_tk_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_tk' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_tk' ), 'WordPress' ); ?></a>
+					<?php do_action( '_sx_credits' ); ?>
+					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_sx' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_sx' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
-                    <a class="credits" href="http://themekraft.com/" target="_blank" title="Themes and Plugins developed by Themekraft" alt="Themes and Plugins developed by Themekraft"><?php _e('Themes and Plugins developed by Themekraft.','_tk') ?> </a>
+                    <a class="credits" href="http://themekraft.com/" target="_blank" title="Themes and Plugins developed by Themekraft" alt="Themes and Plugins developed by Themekraft"><?php _e('Themes and Plugins developed by Themekraft.','_sx') ?> </a>
 				</div><!-- close .site-info -->
 
 			</div>
