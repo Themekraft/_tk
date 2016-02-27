@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: _tk v1.0\n"
+"Project-Id-Version: _sx v1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-16 10:23+0100\n"
 "PO-Revision-Date: 2014-07-16 10:25+0100\n"
