@@ -20,8 +20,6 @@ get_header('single-column'); ?>
 
 		<?php endwhile; ?>
 
-		<?php cactus_content_nav( 'nav-below' ); ?>
-
 	<?php else : ?>
 
 		<?php get_template_part( 'no-results', 'index' ); ?>
