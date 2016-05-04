@@ -48,7 +48,7 @@ function _tk_setup() {
 	add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
-	) ) );
+		) ) );
 	
 	/**
 	 * Make theme available for translation
@@ -63,7 +63,7 @@ function _tk_setup() {
 	*/
 	register_nav_menus( array(
 		'primary'  => __( 'Header bottom menu', '_tk' ),
-	) );
+		) );
 
 }
 endif; // _tk_setup
@@ -80,7 +80,7 @@ function _tk_widgets_init() {
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
-	) );
+		) );
 }
 add_action( 'widgets_init', '_tk_widgets_init' );
 
@@ -149,3 +149,11 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
+
+/**
+ * Adds WooCommerce support
+ */
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
