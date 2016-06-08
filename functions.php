@@ -22,7 +22,10 @@ if ( ! function_exists( '_tk_setup' ) ) :
 function _tk_setup() {
 	global $cap, $content_width;
 
-	// This theme styles the visual editor with editor-style.css to match the theme style.
+	// Add html5 behavior for some theme elements
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
+    // This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
 
 	/**
