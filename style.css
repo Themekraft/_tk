@@ -259,9 +259,9 @@ display: block;
 
 
 /* styles for _tk_pagination und _tk_link_pages */
-nav form.tk-page-nav {
+nav form.tk-page-nav,
+nav .input-group,
+nav .input-group-btn,
+nav .form-control {
     display: inline;
-}
-nav .input-group {
-    display: table-cell;
 }
