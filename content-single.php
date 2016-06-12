@@ -18,12 +18,7 @@
 			<?php the_post_thumbnail(); ?>
 		</div>
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', '_tk' ),
-				'after'  => '</div>',
-			) );
-		?>
+		<?php _tk_link_pages(); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
