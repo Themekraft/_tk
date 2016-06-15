@@ -78,7 +78,6 @@ img[class*="wp-image-"] {
 	border: 1px solid #ccc;
 	margin-bottom: 10px;
 	max-width: 100%;
-	border: 1px solid #ccc;
 	border-radius: 4px;
 	padding: 0 10px;
 }
@@ -257,3 +256,12 @@ display: block;
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
+
+
+/* styles for _tk_pagination und _tk_link_pages */
+nav form.tk-page-nav,
+nav .input-group,
+nav .input-group-btn,
+nav .form-control {
+    display: inline;
+}

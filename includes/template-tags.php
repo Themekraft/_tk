@@ -255,3 +255,190 @@ function _tk_category_transient_flusher() {
 }
 add_action( 'edit_category', '_tk_category_transient_flusher' );
 add_action( 'save_post',     '_tk_category_transient_flusher' );
+
+
+// _tk Bootstrap pagination function
+// original: http://fellowtuts.com/wordpress/bootstrap-3-pagination-in-wordpress/
+/**
+ * 
+ * @global int $paged
+ * @global type $wp_query
+ * @param int $pages
+ * @param type $range
+ */
+function _tk_pagination() {
+    global $paged, $wp_query;
+
+    if (empty($paged)) {
+        $paged = 1;
+    }
+
+    $pages = $wp_query->max_num_pages;
+    if (!$pages) {
+        $pages = 1;
+    }
+
+    if (1 != $pages):
+
+        $input_width = strlen((string)$pages) + 3;
+?>
+<div class="text-center">
+    <nav>
+        <ul class="pagination">
+            <li class="disabled hidden-xs">
+                <span>
+                    <span aria-hidden="true"><?php _e('Page', 'tk'); ?> <?php echo $paged; ?> <?php _e('of', 'tk'); ?> <?php echo $pages; ?></span>
+                </span>
+            </li>
+            <li><a href="<?php echo get_pagenum_link(1); ?>" aria-label="First">&laquo;<span class="hidden-xs"> <?php _e('First', 'tk'); ?></span></a></li>
+
+            <?php if ($paged == 1): ?>
+            <li class="disabled"><span>&lsaquo;<span class="hidden-xs aria-hidden"> <?php _e('Previous', 'tk'); ?></span></span></li>
+            <?php else: ?>
+                <li><a href="<?php echo get_pagenum_link($paged-1); ?>" aria-label="Previous">&lsaquo;<span class="hidden-xs"> <?php _e('Previous', 'tk'); ?></span></a></li>
+            <?php endif; ?>
+
+            <?php $start_page = min(max($paged - 2, 1), max($pages - 4, 1)); ?>
+            <?php $end_page   = min(max($paged + 2, 5), $pages); ?>
+
+            <?php for ($i = $start_page; $i <= $end_page; $i++): ?>
+                <?php if ($paged == $i): ?>
+                    <li class="active"><span><?php echo $i; ?><span class="sr-only">(current)</span></span></li>
+                <?php else: ?>
+                    <li><a href="<?php echo get_pagenum_link($i); ?>"><?php echo $i; ?></a></li>
+                <?php endif; ?>
+            <?php endfor; ?>
+
+            <?php if ($paged == $pages): ?>
+                <li class="disabled"><span><span class="hidden-xs aria-hidden"><?php _e('Next', 'tk'); ?> </span>&rsaquo;</span></li>
+            <?php else: ?>
+                <li><a href="<?php echo get_pagenum_link($paged+1); ?>" aria-label="Next"><span class="hidden-xs"><?php _e('Next', 'tk'); ?> </span>&rsaquo;</a></li>
+            <?php endif; ?>
+
+            <li><a href="<?php echo get_pagenum_link($pages); ?>" aria-label='Last'><span class='hidden-xs'><?php _e('Last', 'tk'); ?> </span>&raquo;</a></li>
+            <li>
+                <form method="get" id="tk-pagination" class="tk-page-nav">
+                    <div class="input-group">
+                        <input oninput="if(!jQuery(this)[0].checkValidity()) {jQuery('#tk-pagination').find(':submit').click();};" type="number" name="paged" min="1" max="<?php echo $pages; ?>" value="<?php echo $paged; ?>" class="form-control text-right" style="width: <?php echo $input_width; ?>em;">
+                        <span class="input-group-btn">
+                            <input type="submit" value="<?php _e('Go to', 'tk'); ?>" class="btn btn-success">
+                        </span>
+                      </div>
+                </form>
+            </li>
+        </ul>
+    </nav>
+</div>
+<?php
+    endif;
+}
+
+/**
+ * _tk_link_pages()
+ * Creates bootstraped pagination for paginated posts
+ * 
+ */
+function _tk_link_pages() {
+    global $numpages, $page, $post;
+
+    if (1 != $numpages):
+        $input_width = strlen((string)$numpages) + 3;
+?>
+<div class="text-center">
+    <nav>
+        <ul class="pagination">
+            <li class="disabled hidden-xs">
+                <span>
+                    <span aria-hidden="true"><?php _e('Page', 'tk'); ?> <?php echo $page; ?> <?php _e('of', 'tk'); ?> <?php echo $numpages; ?></span>
+                </span>
+            </li>
+            <li><?php echo _tk_link_page(1, 'First'); ?>&laquo;<span class="hidden-xs"> <?php _e('First', 'tk'); ?></span></a></li>
+            <?php if ($page == 1): ?>
+                <li class="disabled"><span>&lsaquo;<span class="hidden-xs aria-hidden"> <?php _e('Previous', 'tk'); ?></span></span></li>
+            <?php else: ?>
+                <li><?php echo _tk_link_page($page - 1, 'Previous'); ?>&lsaquo;<span class="hidden-xs"> <?php _e('Previous', 'tk'); ?></span></a></li>                        
+            <?php endif; ?>
+
+            <?php $start_page = min(max($page - 2, 1), max($numpages - 4, 1)); ?>
+            <?php $end_page   = min(max($page + 2, 5), $numpages); ?>
+
+            <?php for ($i = $start_page; $i <= $end_page; $i++): ?>
+                <?php if ($page == $i): ?>
+                    <li class="active">
+                        <span><?php echo $i; ?><span class="sr-only">(current)</span></span>
+                    </li>
+                <?php else: ?>
+                    <li><?php echo _tk_link_page($i) . $i . '</a>'; ?></li>
+                <?php endif; ?>
+            <?php endfor; ?>
+
+            <?php if ($page == $numpages): ?>
+                <li class="disabled"><span><span class="hidden-xs aria-hidden"><?php _e('Next', 'tk'); ?> </span>&rsaquo;</span></li>
+            <?php else: ?>
+                <li><?php echo _tk_link_page($page + 1, 'Next'); ?><span class="hidden-xs"><?php _e('Next', 'tk'); ?> </span>&rsaquo;</a></li>
+            <?php endif; ?>
+            <li><?php echo _tk_link_page($numpages, 'Last'); ?><span class="hidden-xs"><?php _e('Last', 'tk'); ?> </span>&raquo;</a></li>
+            <li>
+                <form action="<?php echo get_permalink($post->ID); ?>" method="get" class="tk-page-nav" id="tk-paging-<?php echo $post->ID; ?>">
+                    <div class="input-group">
+                        <input oninput="if(!jQuery(this)[0].checkValidity()) {jQuery('#tk-paging-<?php echo $post->ID; ?>').find(':submit').click();};" type="number" name="page" min="1" max="<?php echo $numpages; ?>" value="<?php echo $page; ?>" class="form-control text-right" style="width: <?php echo $input_width; ?>em;">
+                        <span class="input-group-btn">
+                            <input type="submit" value="<?php _e('Go to', 'tk'); ?>" class="btn btn-success">
+                        </span>
+                      </div>
+                </form>
+            </li>
+        </ul>
+    </nav>
+</div>
+<?php
+    endif;
+}
+
+/**
+ * _tk_link_page
+ * 
+ * Customized _wp_link_page from wp-includes/post_template.php
+ * 
+ * @global WP_Rewrite $wp_rewrite
+ * @global int $page
+ * @global int $numpages
+ * @param int $i
+ * @param string $aria_label
+ * @param string $class
+ * @return string
+ */
+function _tk_link_page($i, $aria_label = '', $class = '') {
+    global $wp_rewrite, $page, $numpages;
+    $post       = get_post();
+    $query_args = array();
+
+    if (1 == $i) {
+        $url = get_permalink();
+    } else {
+        if ('' == get_option('permalink_structure') || in_array($post->post_status, array('draft', 'pending')))
+            $url = add_query_arg('page', $i, get_permalink());
+        elseif ('page' == get_option('show_on_front') && get_option('page_on_front') == $post->ID)
+            $url = trailingslashit(get_permalink()) . user_trailingslashit("$wp_rewrite->pagination_base/" . $i, 'single_paged');
+        else
+            $url = trailingslashit(get_permalink()) . user_trailingslashit($i, 'single_paged');
+    }
+
+    if (is_preview()) {
+
+        if (( 'draft' !== $post->post_status ) && isset($_GET['preview_id'], $_GET['preview_nonce'])) {
+            $query_args['preview_id']    = wp_unslash($_GET['preview_id']);
+            $query_args['preview_nonce'] = wp_unslash($_GET['preview_nonce']);
+        }
+
+        $url = get_preview_post_link($post, $query_args, $url);
+    }
+
+    if ($class != '') {
+        $class = ' class="' . $class . '"';
+    }
+    if ($aria_label != '') {
+        $aria_label = ' aria-label="' . $aria_label . '"';
+    }
+    return '<a href="' . esc_url($url) . '"' . $aria_label . $class . '>';
+}
