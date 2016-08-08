@@ -29,7 +29,7 @@
 					<?php do_action( '_sx_credits' ); ?>
 					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_sx' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_sx' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
-                    <a class="credits" href="http://techrevol.com/" target="_blank" title="Themes and Plugins developed by Tech Revolution" alt="Themes and Plugins developed by Tech Revolution"><?php _e('Themes and Plugins developed by Themekraft.','_sx') ?> </a>
+                    <a class="credits" href="http://techrevol.com/" target="_blank" title="Themes and Plugins developed by Tech Revolution" alt="Themes and Plugins developed by Tech Revolution"><?php _e('Themes and Plugins developed by Tech Revolution.','_sx') ?> </a>
 				</div><!-- close .site-info -->
 
 			</div>
