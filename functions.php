@@ -167,23 +167,3 @@ require get_template_directory() . '/includes/jetpack.php';
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
 
-
-/*
- * add new widget area for banner
- */
-function cactus_banner_widget( $content ) {
-    if ( is_singular( array( 'post', 'page' ) ) && is_active_sidebar( 'banner' ) && is_main_query() ) {
-        dynamic_sidebar('banner');
-    }
-    return $content;
-}
-
-/*
- * add new widget area for footer
- */
-function cactus_footer_widget( $content ) {
-    if ( is_singular( array( 'post', 'page' ) ) && is_active_sidebar( 'footer' ) && is_main_query() ) {
-        dynamic_sidebar('footer');
-    }
-    return $content;
-}
