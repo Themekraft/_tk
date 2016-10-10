@@ -2,13 +2,17 @@
 # This file is distributed under the same license as the _tk package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-11-09 08:39:54+0000\n"
+"PO-Revision-Date: 2016-10-04 20:50-0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/1.0-alpha-1100\n"
+"X-Generator: Poedit 1.8.7\n"
 "Project-Id-Version: _tk\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
 
 #. Description of the plugin/theme
 msgid "Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress. You can find me on GitHub. Fork me! I'm waiting for you ;)"
@@ -63,7 +67,7 @@ msgstr "Afficher tous les articles par %s"
 
 #: includes/template-tags.php:210
 msgid ", updated on "
-msgstr ""
+msgstr ", modifié le"
 
 #: includes/template-tags.php:213
 msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
@@ -71,7 +75,7 @@ msgstr "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> b
 
 #: includes/template-tags.php:95
 msgid "<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> Edit"
-msgstr ""
+msgstr "<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> Editer"
 
 #: includes/template-tags.php:100
 msgid "Your comment is awaiting moderation."
@@ -150,7 +154,7 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Précédent"
 
 #: footer.php:25
 msgid "Themes and Plugins developed by Themekraft."
-msgstr ""
+msgstr "Thèmes et Plugins développés par Themekraft."
 
 #: functions.php:65
 msgid "Header bottom menu"
@@ -303,11 +307,14 @@ msgstr "Jour : %s"
 
 #: 404.php:14
 msgid "Oops! Something went wrong here."
-msgstr ""
+msgstr "Oups, il y a un problème !"
 
 #: 404.php:19
 msgid "Nothing could be found at this location. Maybe try a search?"
 msgstr ""
+"Désolé, mais rien ne correspond à vos attentes.\n"
+"\n"
+"Une recherche avec un mot sera peut être plus fructueuse."
 
 #: archive.php:31
 msgid "Author: %s"
