@@ -87,7 +87,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php //_tk_content_nav( 'nav-below' ); ?>
+			<?php // _tk_content_nav( 'nav-below' ); ?>
             <?php _tk_pagination(); ?>
 		<?php else : ?>
 
