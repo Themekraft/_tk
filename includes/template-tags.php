@@ -287,15 +287,15 @@ function _tk_pagination() {
         <ul class="pagination">
             <li class="disabled hidden-xs">
                 <span>
-                    <span aria-hidden="true"><?php _e('Page', 'tk'); ?> <?php echo $paged; ?> <?php _e('of', 'tk'); ?> <?php echo $pages; ?></span>
+                    <span aria-hidden="true"><?php _e('Page', '_tk'); ?> <?php echo $paged; ?> <?php _e('of', '_tk'); ?> <?php echo $pages; ?></span>
                 </span>
             </li>
-            <li><a href="<?php echo get_pagenum_link(1); ?>" aria-label="First">&laquo;<span class="hidden-xs"> <?php _e('First', 'tk'); ?></span></a></li>
+            <li><a href="<?php echo get_pagenum_link(1); ?>" aria-label="First">&laquo;<span class="hidden-xs"> <?php _e('First', '_tk'); ?></span></a></li>
 
             <?php if ($paged == 1): ?>
-            <li class="disabled"><span>&lsaquo;<span class="hidden-xs aria-hidden"> <?php _e('Previous', 'tk'); ?></span></span></li>
+            <li class="disabled"><span>&lsaquo;<span class="hidden-xs aria-hidden"> <?php _e('Previous', '_tk'); ?></span></span></li>
             <?php else: ?>
-                <li><a href="<?php echo get_pagenum_link($paged-1); ?>" aria-label="Previous">&lsaquo;<span class="hidden-xs"> <?php _e('Previous', 'tk'); ?></span></a></li>
+                <li><a href="<?php echo get_pagenum_link($paged-1); ?>" aria-label="Previous">&lsaquo;<span class="hidden-xs"> <?php _e('Previous', '_tk'); ?></span></a></li>
             <?php endif; ?>
 
             <?php $start_page = min(max($paged - 2, 1), max($pages - 4, 1)); ?>
@@ -310,18 +310,18 @@ function _tk_pagination() {
             <?php endfor; ?>
 
             <?php if ($paged == $pages): ?>
-                <li class="disabled"><span><span class="hidden-xs aria-hidden"><?php _e('Next', 'tk'); ?> </span>&rsaquo;</span></li>
+                <li class="disabled"><span><span class="hidden-xs aria-hidden"><?php _e('Next', '_tk'); ?> </span>&rsaquo;</span></li>
             <?php else: ?>
-                <li><a href="<?php echo get_pagenum_link($paged+1); ?>" aria-label="Next"><span class="hidden-xs"><?php _e('Next', 'tk'); ?> </span>&rsaquo;</a></li>
+                <li><a href="<?php echo get_pagenum_link($paged+1); ?>" aria-label="Next"><span class="hidden-xs"><?php _e('Next', '_tk'); ?> </span>&rsaquo;</a></li>
             <?php endif; ?>
 
-            <li><a href="<?php echo get_pagenum_link($pages); ?>" aria-label='Last'><span class='hidden-xs'><?php _e('Last', 'tk'); ?> </span>&raquo;</a></li>
+            <li><a href="<?php echo get_pagenum_link($pages); ?>" aria-label='Last'><span class='hidden-xs'><?php _e('Last', '_tk'); ?> </span>&raquo;</a></li>
             <li>
                 <form method="get" id="tk-pagination" class="tk-page-nav">
                     <div class="input-group">
                         <input oninput="if(!jQuery(this)[0].checkValidity()) {jQuery('#tk-pagination').find(':submit').click();};" type="number" name="paged" min="1" max="<?php echo $pages; ?>" value="<?php echo $paged; ?>" class="form-control text-right" style="width: <?php echo $input_width; ?>em;">
                         <span class="input-group-btn">
-                            <input type="submit" value="<?php _e('Go to', 'tk'); ?>" class="btn btn-success">
+                            <input type="submit" value="<?php _e('Go to', '_tk'); ?>" class="btn btn-success">
                         </span>
                       </div>
                 </form>
@@ -349,14 +349,14 @@ function _tk_link_pages() {
         <ul class="pagination">
             <li class="disabled hidden-xs">
                 <span>
-                    <span aria-hidden="true"><?php _e('Page', 'tk'); ?> <?php echo $page; ?> <?php _e('of', 'tk'); ?> <?php echo $numpages; ?></span>
+                    <span aria-hidden="true"><?php _e('Page', '_tk'); ?> <?php echo $page; ?> <?php _e('of', '_tk'); ?> <?php echo $numpages; ?></span>
                 </span>
             </li>
-            <li><?php echo _tk_link_page(1, 'First'); ?>&laquo;<span class="hidden-xs"> <?php _e('First', 'tk'); ?></span></a></li>
+            <li><?php echo _tk_link_page(1, 'First'); ?>&laquo;<span class="hidden-xs"> <?php _e('First', '_tk'); ?></span></a></li>
             <?php if ($page == 1): ?>
-                <li class="disabled"><span>&lsaquo;<span class="hidden-xs aria-hidden"> <?php _e('Previous', 'tk'); ?></span></span></li>
+                <li class="disabled"><span>&lsaquo;<span class="hidden-xs aria-hidden"> <?php _e('Previous', '_tk'); ?></span></span></li>
             <?php else: ?>
-                <li><?php echo _tk_link_page($page - 1, 'Previous'); ?>&lsaquo;<span class="hidden-xs"> <?php _e('Previous', 'tk'); ?></span></a></li>                        
+                <li><?php echo _tk_link_page($page - 1, 'Previous'); ?>&lsaquo;<span class="hidden-xs"> <?php _e('Previous', '_tk'); ?></span></a></li>                        
             <?php endif; ?>
 
             <?php $start_page = min(max($page - 2, 1), max($numpages - 4, 1)); ?>
@@ -373,17 +373,17 @@ function _tk_link_pages() {
             <?php endfor; ?>
 
             <?php if ($page == $numpages): ?>
-                <li class="disabled"><span><span class="hidden-xs aria-hidden"><?php _e('Next', 'tk'); ?> </span>&rsaquo;</span></li>
+                <li class="disabled"><span><span class="hidden-xs aria-hidden"><?php _e('Next', '_tk'); ?> </span>&rsaquo;</span></li>
             <?php else: ?>
-                <li><?php echo _tk_link_page($page + 1, 'Next'); ?><span class="hidden-xs"><?php _e('Next', 'tk'); ?> </span>&rsaquo;</a></li>
+                <li><?php echo _tk_link_page($page + 1, 'Next'); ?><span class="hidden-xs"><?php _e('Next', '_tk'); ?> </span>&rsaquo;</a></li>
             <?php endif; ?>
-            <li><?php echo _tk_link_page($numpages, 'Last'); ?><span class="hidden-xs"><?php _e('Last', 'tk'); ?> </span>&raquo;</a></li>
+            <li><?php echo _tk_link_page($numpages, 'Last'); ?><span class="hidden-xs"><?php _e('Last', '_tk'); ?> </span>&raquo;</a></li>
             <li>
                 <form action="<?php echo get_permalink($post->ID); ?>" method="get" class="tk-page-nav" id="tk-paging-<?php echo $post->ID; ?>">
                     <div class="input-group">
                         <input oninput="if(!jQuery(this)[0].checkValidity()) {jQuery('#tk-paging-<?php echo $post->ID; ?>').find(':submit').click();};" type="number" name="page" min="1" max="<?php echo $numpages; ?>" value="<?php echo $page; ?>" class="form-control text-right" style="width: <?php echo $input_width; ?>em;">
                         <span class="input-group-btn">
-                            <input type="submit" value="<?php _e('Go to', 'tk'); ?>" class="btn btn-success">
+                            <input type="submit" value="<?php _e('Go to', '_tk'); ?>" class="btn btn-success">
                         </span>
                       </div>
                 </form>
