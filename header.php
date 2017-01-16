@@ -72,7 +72,7 @@
 						array(
 							'theme_location' 	=> 'primary',
 							'depth'             => 2,
-							'container'         => 'div',
+							'container'         => 'nav',
 							'container_id'      => 'navbar-collapse',
 							'container_class'   => 'collapse navbar-collapse',
 							'menu_class' 		=> 'nav navbar-nav',
