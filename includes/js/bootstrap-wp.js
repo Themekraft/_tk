@@ -10,8 +10,8 @@ jQuery( document ).ready( function( $ ) {
     // Now we'll add some classes for the wordpress default widgets - let's go
 
     // the search widget
-    $( 'input.search-field' ).addClass( 'form-control' );
-    $( 'input.search-submit' ).addClass( 'btn btn-default' );
+    $( '.widget_search input.search-field' ).addClass( 'form-control' );
+    $( '.widget_search input.search-submit' ).addClass( 'btn btn-default' );
 
     $( '.widget_rss ul' ).addClass( 'media-list' );
 
