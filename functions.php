@@ -1,8 +1,8 @@
 <?php
 /**
- * _tk functions and definitions
+ * Tk functions and definitions
  *
- * @package _tk
+ * @package Tk
  */
 
 /**

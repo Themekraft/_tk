@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package _tk
+ * @package Tk
  */
 
 if ( ! function_exists( '_tk_content_nav' ) ) :

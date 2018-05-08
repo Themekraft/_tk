@@ -4,7 +4,7 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package _tk
+ * @package Tk
  */
 ?>
 			</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
