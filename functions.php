@@ -1,6 +1,6 @@
 <?php
 /**
- * Tk functions and definitions
+ * _tk functions and definitions
  *
  * @package Tk
  */
