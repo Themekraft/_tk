@@ -1,6 +1,6 @@
 <?php
 /**
- * @package _tk
+ * @package Tk
  */
 ?>
 

@@ -2,7 +2,7 @@
 /**
  * _tk functions and definitions
  *
- * @package _tk
+ * @package Tk
  */
  
  /**

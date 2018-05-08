@@ -7,7 +7,7 @@
  * handled by a callback to _tk_comment() which is
  * located in the includes/template-tags.php file.
  *
- * @package _tk
+ * @package Tk
  */
 
 /*

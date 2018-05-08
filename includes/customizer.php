@@ -2,7 +2,7 @@
 /**
  * _tk Theme Customizer
  *
- * @package _tk
+ * @package Tk
  */
 
 /**
