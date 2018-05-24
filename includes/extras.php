@@ -63,7 +63,7 @@ function _tk_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		$title .= " $sep " . sprintf( __( 'Page %s', '_tk' ), max( $paged, $page ) );
+		$title .= " $sep " . sprintf( __( 'Page %s', 'Tk' ), max( $paged, $page ) );
 
 	return $title;
 }
